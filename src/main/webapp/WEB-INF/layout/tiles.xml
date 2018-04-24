@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="base" template="/WEB-INF/layout/page.jsp">
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp"/>
+    </definition>
+    <!--定义扩展Tile(即运用了其他tile模板的视图)-->
+    <definition name="home" extends="base">
+        <put-attribute name="body"
+                       value="/history/home.jsp"/>
+    </definition>
+    <definition name="add_song" extends="base">
+        <put-attribute name="body"
+                       value="/history/add_song.jsp"/>
+    </definition>
+    <definition name="del_song" extends="base">
+        <put-attribute name="body"
+                       value="/history/del_song.jsp"/>
+    </definition>
+    <definition name="upd_song" extends="base">
+        <put-attribute name="body"
+                       value="/history/upd_song.jsp"/>
+    </definition>
+    <definition name="browse_song" extends="base">
+        <put-attribute name="body"
+                       value="/history/browse_song.jsp"/>
+    </definition>
+    <definition name="success" extends="base">
+        <put-attribute name="body"
+                       value="/history/success.jsp"/>
+    </definition>
+</tiles-definitions>

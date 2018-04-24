@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+
+body{
+    background-image: url("/resources/img/music2.png");
+    background-size: contain;
+}
+
+div {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration-line: none;
+    color: white;
+}
+a:hover{
+    color: aqua;
+}

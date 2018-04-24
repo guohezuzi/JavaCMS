@@ -1,0 +1,431 @@
+2018-02-16 15:27:16  [ main:0 ] - [ DEBUG ]  No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+2018-02-16 15:27:16  [ main:244 ] - [ DEBUG ]  Initializing filter 'characterEncodingFilter'
+2018-02-16 15:27:16  [ main:249 ] - [ DEBUG ]  Filter 'characterEncodingFilter' configured successfully
+2018-02-16 15:27:16  [ main:305 ] - [ DEBUG ]  Initializing servlet 'dispatcher'
+2018-02-16 15:27:16  [ main:306 ] - [ INFO ]  FrameworkServlet 'dispatcher': initialization started
+2018-02-16 15:27:16  [ main:337 ] - [ DEBUG ]  Adding PropertySource 'servletConfigInitParams' with lowest search precedence
+2018-02-16 15:27:16  [ main:338 ] - [ DEBUG ]  Adding PropertySource 'servletContextInitParams' with lowest search precedence
+2018-02-16 15:27:16  [ main:342 ] - [ DEBUG ]  Adding PropertySource 'jndiProperties' with lowest search precedence
+2018-02-16 15:27:16  [ main:342 ] - [ DEBUG ]  Adding PropertySource 'systemProperties' with lowest search precedence
+2018-02-16 15:27:16  [ main:343 ] - [ DEBUG ]  Adding PropertySource 'systemEnvironment' with lowest search precedence
+2018-02-16 15:27:16  [ main:344 ] - [ DEBUG ]  Initialized StandardServletEnvironment with PropertySources [StubPropertySource@115297013 {name='servletConfigInitParams', properties=java.lang.Object@26e8ff8c}, StubPropertySource@1520921298 {name='servletContextInitParams', properties=java.lang.Object@590d6c76}, JndiPropertySource@628694336 {name='jndiProperties', properties=org.springframework.jndi.JndiLocatorDelegate@448c92fc}, MapPropertySource@622625093 {name='systemProperties', properties={sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=9, file.encoding.pkg=sun.io, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, java.class.path=/opt/idea-IU-173.4127.27/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Shanghai, os.name=Linux, java.vm.specification.version=9, sun.java.launcher=SUN_STANDARD, user.country=CN, sun.boot.library.path=/home/guohezuzi/Downloads/jdk-9.0.1/lib, sun.java.command=org.codehaus.classworlds.Launcher -Didea.version=2017.3.2 -s /home/guohezuzi/.m2/settings.xml -Dmaven.repo.local=/home/guohezuzi/.m2/repository jetty:run, jdk.debug=release, maven.home=/opt/idea-IU-173.4127.27/plugins/maven/lib/maven3, sun.cpu.endian=little, user.home=/home/guohezuzi, user.language=zh, java.specification.vendor=Oracle Corporation, java.home=/home/guohezuzi/Downloads/jdk-9.0.1, file.separator=/, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=9.0.1+11, user.name=guohezuzi, path.separator=:, securerandom.source=file:/dev/./urandom, os.version=4.13.0-33-generic, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, guice.disable.misplaced.annotation.check=true, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.url.bug=http://bugreport.java.com/bugreport/, jetty.git.hash=82b8fb23f757335bb3329d540ce37a2a2615f0a8, java.io.tmpdir=/tmp, idea.version=2017.3.2, java.version=9.0.1, user.dir=/home/guohezuzi/IdeaProjects/MusicSystem, os.arch=amd64, maven.multiModuleProjectDirectory=/home/guohezuzi/IdeaProjects/MusicSystem, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, sun.os.patch.level=unknown, java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=9.0.1+11, classworlds.conf=/opt/idea-IU-173.4127.27/plugins/maven/lib/maven3/bin/m2.conf, sun.io.unicode.encoding=UnicodeLittle, maven.repo.local=/home/guohezuzi/.m2/repository, java.class.version=53.0}}, SystemEnvironmentPropertySource@398468940 {name='systemEnvironment', properties={PATH=/usr/share/mavenbin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$JAVA_HOME/bin:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin, XAUTHORITY=/home/guohezuzi/.Xauthority, LC_MEASUREMENT=zh_CN.UTF-8, LC_TELEPHONE=zh_CN.UTF-8, XMODIFIERS=@im=fcitx, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, GDMSESSION=ubuntu, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop, LC_TIME=zh_CN.UTF-8, TEXTDOMAINDIR=/usr/share/locale/, GTK_IM_MODULE=fcitx, DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, JRE_HOME=/usr/lib/jvm/java-8-oracle/jre, XDG_CURRENT_DESKTOP=ubuntu:GNOME, LIBGL_ALWAYS_SOFTWARE=1, MAVEN_HOME=/usr/share/maven, SSH_AGENT_PID=1357, QT4_IM_MODULE=fcitx, SESSION_MANAGER=local/guohezuzi-ThinkPad-E560:@/tmp/.ICE-unix/1258,unix/guohezuzi-ThinkPad-E560:/tmp/.ICE-unix/1258, LC_PAPER=zh_CN.UTF-8, LOGNAME=guohezuzi, PWD=/home/guohezuzi/IdeaProjects/MusicSystem, IM_CONFIG_PHASE=2, DERBY_HOME=/usr/lib/jvm/java-8-oracle/db, LANGUAGE=zh_CN:zh:en_US:en, GJS_DEBUG_TOPICS=JS ERROR;JS LOG, SHELL=/bin/bash, LC_ADDRESS=zh_CN.UTF-8, GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/jetbrains-idea.desktop, J2SDKDIR=/usr/lib/jvm/java-8-oracle, GTK2_MODULES=overlay-scrollbar, OLDPWD=/opt/idea-IU-173.4127.27/bin, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, J2REDIR=/usr/lib/jvm/java-8-oracle/jre, GTK_MODULES=gail:atk-bridge, CLUTTER_IM_MODULE=xim, TEXTDOMAIN=im-config, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, XDG_SESSION_DESKTOP=ubuntu, SHLVL=0, LC_IDENTIFICATION=zh_CN.UTF-8, LC_MONETARY=zh_CN.UTF-8, QT_IM_MODULE=fcitx, JAVA_HOME=/usr/lib/jvm/java-8-oracle, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg/xdg-ubuntu:/etc/xdg, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, LANG=zh_CN.UTF-8, XDG_SESSION_TYPE=x11, XDG_SESSION_ID=c2, DISPLAY=:0, LC_NAME=zh_CN.UTF-8, GDM_LANG=zh_CN, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/guohezuzi, DESKTOP_SESSION=ubuntu, USER=guohezuzi, XDG_MENU_PREFIX=gnome-, CLASSPATH=/opt/idea-IU-173.4127.27/lib/bootstrap.jar:/opt/idea-IU-173.4127.27/lib/extensions.jar:/opt/idea-IU-173.4127.27/lib/util.jar:/opt/idea-IU-173.4127.27/lib/jdom.jar:/opt/idea-IU-173.4127.27/lib/log4j.jar:/opt/idea-IU-173.4127.27/lib/trove4j.jar:/opt/idea-IU-173.4127.27/lib/jna.jar:/opt/idea-IU-173.4127.27/jre64/lib/tools.jar, GIO_LAUNCHED_DESKTOP_FILE_PID=2547, QT_ACCESSIBILITY=1, GJS_DEBUG_OUTPUT=stderr, LC_NUMERIC=zh_CN.UTF-8, XDG_SEAT=seat0, SSH_AUTH_SOCK=/run/user/1000/keyring/ssh, GNOME_SHELL_SESSION_MODE=ubuntu, XDG_RUNTIME_DIR=/run/user/1000, XDG_VTNR=7, HOME=/home/guohezuzi}}]
+2018-02-16 15:27:16  [ main:344 ] - [ DEBUG ]  Replacing PropertySource 'servletContextInitParams' with 'servletContextInitParams'
+2018-02-16 15:27:16  [ main:345 ] - [ DEBUG ]  Replacing PropertySource 'servletConfigInitParams' with 'servletConfigInitParams'
+2018-02-16 15:27:16  [ main:351 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Feb 16 15:27:16 CST 2018]; root of context hierarchy
+2018-02-16 15:27:16  [ main:396 ] - [ DEBUG ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-02-16 15:27:16  [ main:397 ] - [ DEBUG ]  JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2018-02-16 15:27:16  [ main:403 ] - [ INFO ]  Registering annotated classes: [class config.WebConfig]
+2018-02-16 15:27:16  [ main:486 ] - [ DEBUG ]  Bean factory for WebApplicationContext for namespace 'dispatcher-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@79df80a4: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,webConfig]; root of factory hierarchy
+2018-02-16 15:27:16  [ main:503 ] - [ DEBUG ]  Registering scope 'request' with implementation [org.springframework.web.context.request.RequestScope@19662208]
+2018-02-16 15:27:16  [ main:505 ] - [ DEBUG ]  Registering scope 'session' with implementation [org.springframework.web.context.request.SessionScope@93bf0e0]
+2018-02-16 15:27:16  [ main:506 ] - [ DEBUG ]  Registering scope 'application' with implementation [org.springframework.web.context.support.ServletContextScope@3dec3f87]
+2018-02-16 15:27:16  [ main:517 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-02-16 15:27:16  [ main:518 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-02-16 15:27:16  [ main:546 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2018-02-16 15:27:16  [ main:550 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-02-16 15:27:17  [ main:586 ] - [ DEBUG ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-02-16 15:27:17  [ main:587 ] - [ DEBUG ]  JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2018-02-16 15:27:17  [ main:592 ] - [ DEBUG ]  Resolved classpath location [controller/] to resources [URL [file:/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/controller/]]
+2018-02-16 15:27:17  [ main:594 ] - [ DEBUG ]  Looking for matching resources in directory tree [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/controller]
+2018-02-16 15:27:17  [ main:595 ] - [ DEBUG ]  Searching directory [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/controller] for files matching pattern [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/controller/**/*.class]
+2018-02-16 15:27:17  [ main:600 ] - [ DEBUG ]  Resolved location pattern [classpath*:controller/**/*.class] to resources [file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/controller/AOPController.class], file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/controller/HomeController.class], file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/controller/MusicController.class]]
+2018-02-16 15:27:17  [ main:625 ] - [ DEBUG ]  Identified candidate component class: file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/controller/AOPController.class]
+2018-02-16 15:27:17  [ main:626 ] - [ DEBUG ]  Identified candidate component class: file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/controller/HomeController.class]
+2018-02-16 15:27:17  [ main:630 ] - [ DEBUG ]  Identified candidate component class: file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/controller/MusicController.class]
+2018-02-16 15:27:17  [ main:632 ] - [ DEBUG ]  Resolved classpath location [config/] to resources [URL [file:/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/config/]]
+2018-02-16 15:27:17  [ main:633 ] - [ DEBUG ]  Looking for matching resources in directory tree [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/config]
+2018-02-16 15:27:17  [ main:633 ] - [ DEBUG ]  Searching directory [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/config] for files matching pattern [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/config/**/*.class]
+2018-02-16 15:27:17  [ main:634 ] - [ DEBUG ]  Resolved location pattern [classpath*:config/**/*.class] to resources [file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/config/DateConfig.class], file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/config/WebConfig.class], file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/config/WebappInitialization.class]]
+2018-02-16 15:27:17  [ main:636 ] - [ DEBUG ]  Identified candidate component class: file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/config/DateConfig.class]
+2018-02-16 15:27:17  [ main:639 ] - [ DEBUG ]  Resolved classpath location [data/] to resources [URL [file:/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/data/]]
+2018-02-16 15:27:17  [ main:639 ] - [ DEBUG ]  Looking for matching resources in directory tree [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/data]
+2018-02-16 15:27:17  [ main:640 ] - [ DEBUG ]  Searching directory [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/data] for files matching pattern [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/data/**/*.class]
+2018-02-16 15:27:17  [ main:641 ] - [ DEBUG ]  Resolved location pattern [classpath*:data/**/*.class] to resources [file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/data/JdbcSongRepositortImp$1.class], file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/data/JdbcSongRepositortImp$SongRowMapper.class], file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/data/JdbcSongRepositortImp.class], file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/data/SongRepository.class]]
+2018-02-16 15:27:17  [ main:643 ] - [ DEBUG ]  Identified candidate component class: file [/home/guohezuzi/IdeaProjects/MusicSystem/target/classes/data/JdbcSongRepositortImp.class]
+2018-02-16 15:27:17  [ main:773 ] - [ DEBUG ]  Registering bean definition for @Bean method config.DateConfig.dateSource()
+2018-02-16 15:27:17  [ main:774 ] - [ DEBUG ]  Registering bean definition for @Bean method config.DateConfig.jdbcTemplate()
+2018-02-16 15:27:17  [ main:776 ] - [ DEBUG ]  Registered bean definition for imported class 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:17  [ main:777 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.requestMappingHandlerMapping()
+2018-02-16 15:27:17  [ main:778 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcPathMatcher()
+2018-02-16 15:27:17  [ main:783 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcUrlPathHelper()
+2018-02-16 15:27:17  [ main:789 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcContentNegotiationManager()
+2018-02-16 15:27:17  [ main:790 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.viewControllerHandlerMapping()
+2018-02-16 15:27:17  [ main:792 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.beanNameHandlerMapping()
+2018-02-16 15:27:17  [ main:793 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.resourceHandlerMapping()
+2018-02-16 15:27:17  [ main:794 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcResourceUrlProvider()
+2018-02-16 15:27:17  [ main:797 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.defaultServletHandlerMapping()
+2018-02-16 15:27:17  [ main:801 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.requestMappingHandlerAdapter()
+2018-02-16 15:27:17  [ main:802 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcConversionService()
+2018-02-16 15:27:17  [ main:827 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcValidator()
+2018-02-16 15:27:17  [ main:829 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcUriComponentsContributor()
+2018-02-16 15:27:17  [ main:831 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.httpRequestHandlerAdapter()
+2018-02-16 15:27:17  [ main:832 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.simpleControllerHandlerAdapter()
+2018-02-16 15:27:17  [ main:844 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.handlerExceptionResolver()
+2018-02-16 15:27:17  [ main:846 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcViewResolver()
+2018-02-16 15:27:17  [ main:848 ] - [ DEBUG ]  Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcHandlerMappingIntrospector()
+2018-02-16 15:27:17  [ main:849 ] - [ DEBUG ]  Registering bean definition for @Bean method config.WebConfig.messageSource()
+2018-02-16 15:27:17  [ main:850 ] - [ DEBUG ]  Registering bean definition for @Bean method config.WebConfig.tilesConfigurer()
+2018-02-16 15:27:17  [ main:851 ] - [ DEBUG ]  Registering bean definition for @Bean method config.WebConfig.tilesViewResolver()
+2018-02-16 15:27:17  [ main:957 ] - [ DEBUG ]  Successfully enhanced config.WebConfig; enhanced class name is: config.WebConfig$$EnhancerBySpringCGLIB$$b073f7d4
+2018-02-16 15:27:17  [ main:958 ] - [ DEBUG ]  Replacing bean definition 'webConfig' existing class 'config.WebConfig' with enhanced class 'config.WebConfig$$EnhancerBySpringCGLIB$$b073f7d4'
+2018-02-16 15:27:17  [ main:962 ] - [ DEBUG ]  Successfully enhanced config.DateConfig; enhanced class name is: config.DateConfig$$EnhancerBySpringCGLIB$$caf8d306
+2018-02-16 15:27:17  [ main:963 ] - [ DEBUG ]  Replacing bean definition 'dateConfig' existing class 'config.DateConfig' with enhanced class 'config.DateConfig$$EnhancerBySpringCGLIB$$caf8d306'
+2018-02-16 15:27:17  [ main:980 ] - [ DEBUG ]  Successfully enhanced org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; enhanced class name is: org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$c70a1a7b
+2018-02-16 15:27:17  [ main:981 ] - [ DEBUG ]  Replacing bean definition 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration' existing class 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration' with enhanced class 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$c70a1a7b'
+2018-02-16 15:27:17  [ main:991 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-02-16 15:27:17  [ main:992 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-02-16 15:27:17  [ main:993 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-02-16 15:27:17  [ main:994 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1054 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1054 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1055 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1056 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1073 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1075 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1076 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1079 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1102 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1102 ] - [ DEBUG ]  Creating shared instance of singleton bean 'messageSource'
+2018-02-16 15:27:17  [ main:1103 ] - [ DEBUG ]  Creating instance of bean 'messageSource'
+2018-02-16 15:27:17  [ main:1107 ] - [ DEBUG ]  Creating shared instance of singleton bean 'webConfig'
+2018-02-16 15:27:17  [ main:1107 ] - [ DEBUG ]  Creating instance of bean 'webConfig'
+2018-02-16 15:27:17  [ main:1125 ] - [ DEBUG ]  Eagerly caching bean 'webConfig' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1143 ] - [ DEBUG ]  Finished creating instance of bean 'webConfig'
+2018-02-16 15:27:17  [ main:1181 ] - [ DEBUG ]  Eagerly caching bean 'messageSource' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1198 ] - [ DEBUG ]  Finished creating instance of bean 'messageSource'
+2018-02-16 15:27:17  [ main:1198 ] - [ DEBUG ]  Using MessageSource [org.springframework.context.support.ReloadableResourceBundleMessageSource: basenames=[classpath:properties/messages]]
+2018-02-16 15:27:17  [ main:1204 ] - [ DEBUG ]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@4ff66917]
+2018-02-16 15:27:17  [ main:1206 ] - [ DEBUG ]  Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@1a785fd5]
+2018-02-16 15:27:17  [ main:1222 ] - [ DEBUG ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@79df80a4: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,webConfig,AOPController,homeController,musicController,dateConfig,jdbcSongRepositortImp,dateSource,jdbcTemplate,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcPathMatcher,mvcUrlPathHelper,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,mvcResourceUrlProvider,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,mvcUriComponentsContributor,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,mvcViewResolver,mvcHandlerMappingIntrospector,messageSource,tilesConfigurer,tilesViewResolver]; root of factory hierarchy
+2018-02-16 15:27:17  [ main:1222 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1224 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1225 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1226 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-02-16 15:27:17  [ main:1231 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-02-16 15:27:17  [ main:1231 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-02-16 15:27:17  [ main:1234 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1244 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-02-16 15:27:17  [ main:1246 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-02-16 15:27:17  [ main:1259 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-02-16 15:27:17  [ main:1260 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1270 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-02-16 15:27:17  [ main:1272 ] - [ DEBUG ]  Returning cached instance of singleton bean 'webConfig'
+2018-02-16 15:27:17  [ main:1272 ] - [ DEBUG ]  Creating shared instance of singleton bean 'AOPController'
+2018-02-16 15:27:17  [ main:1273 ] - [ DEBUG ]  Creating instance of bean 'AOPController'
+2018-02-16 15:27:17  [ main:1279 ] - [ DEBUG ]  Eagerly caching bean 'AOPController' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1285 ] - [ DEBUG ]  Finished creating instance of bean 'AOPController'
+2018-02-16 15:27:17  [ main:1286 ] - [ DEBUG ]  Creating shared instance of singleton bean 'homeController'
+2018-02-16 15:27:17  [ main:1287 ] - [ DEBUG ]  Creating instance of bean 'homeController'
+2018-02-16 15:27:17  [ main:1290 ] - [ DEBUG ]  Eagerly caching bean 'homeController' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1295 ] - [ DEBUG ]  Finished creating instance of bean 'homeController'
+2018-02-16 15:27:17  [ main:1296 ] - [ DEBUG ]  Creating shared instance of singleton bean 'musicController'
+2018-02-16 15:27:17  [ main:1296 ] - [ DEBUG ]  Creating instance of bean 'musicController'
+2018-02-16 15:27:17  [ main:1309 ] - [ DEBUG ]  Registered injected element on class [controller.MusicController]: AutowiredFieldElement for private data.SongRepository controller.MusicController.songRepository
+2018-02-16 15:27:17  [ main:1309 ] - [ DEBUG ]  Eagerly caching bean 'musicController' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1316 ] - [ DEBUG ]  Processing injected element of bean 'musicController': AutowiredFieldElement for private data.SongRepository controller.MusicController.songRepository
+2018-02-16 15:27:17  [ main:1324 ] - [ DEBUG ]  Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2018-02-16 15:27:17  [ main:1330 ] - [ DEBUG ]  Creating shared instance of singleton bean 'jdbcSongRepositortImp'
+2018-02-16 15:27:17  [ main:1331 ] - [ DEBUG ]  Creating instance of bean 'jdbcSongRepositortImp'
+2018-02-16 15:27:17  [ main:1338 ] - [ DEBUG ]  Registered injected element on class [data.JdbcSongRepositortImp]: AutowiredFieldElement for private org.springframework.jdbc.core.JdbcOperations data.JdbcSongRepositortImp.jdbc
+2018-02-16 15:27:17  [ main:1338 ] - [ DEBUG ]  Eagerly caching bean 'jdbcSongRepositortImp' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1344 ] - [ DEBUG ]  Processing injected element of bean 'jdbcSongRepositortImp': AutowiredFieldElement for private org.springframework.jdbc.core.JdbcOperations data.JdbcSongRepositortImp.jdbc
+2018-02-16 15:27:17  [ main:1344 ] - [ DEBUG ]  Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2018-02-16 15:27:17  [ main:1345 ] - [ DEBUG ]  Creating shared instance of singleton bean 'jdbcTemplate'
+2018-02-16 15:27:17  [ main:1346 ] - [ DEBUG ]  Creating instance of bean 'jdbcTemplate'
+2018-02-16 15:27:17  [ main:1346 ] - [ DEBUG ]  Creating shared instance of singleton bean 'dateConfig'
+2018-02-16 15:27:17  [ main:1347 ] - [ DEBUG ]  Creating instance of bean 'dateConfig'
+2018-02-16 15:27:17  [ main:1347 ] - [ DEBUG ]  Eagerly caching bean 'dateConfig' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1352 ] - [ DEBUG ]  Finished creating instance of bean 'dateConfig'
+2018-02-16 15:27:17  [ main:1355 ] - [ DEBUG ]  Creating shared instance of singleton bean 'dateSource'
+2018-02-16 15:27:17  [ main:1355 ] - [ DEBUG ]  Creating instance of bean 'dateSource'
+2018-02-16 15:27:17  [ main:1356 ] - [ DEBUG ]  Returning cached instance of singleton bean 'dateConfig'
+2018-02-16 15:27:17  [ main:1371 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-02-16 15:27:17  [ main:1373 ] - [ DEBUG ]  Eagerly caching bean 'dateSource' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1383 ] - [ DEBUG ]  Finished creating instance of bean 'dateSource'
+2018-02-16 15:27:17  [ main:1385 ] - [ DEBUG ]  Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'dateSource'
+2018-02-16 15:27:17  [ main:1407 ] - [ DEBUG ]  Eagerly caching bean 'jdbcTemplate' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1428 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'jdbcTemplate'
+2018-02-16 15:27:17  [ main:1429 ] - [ DEBUG ]  Finished creating instance of bean 'jdbcTemplate'
+2018-02-16 15:27:17  [ main:1430 ] - [ DEBUG ]  Autowiring by type from bean name 'jdbcSongRepositortImp' to bean named 'jdbcTemplate'
+2018-02-16 15:27:17  [ main:1430 ] - [ DEBUG ]  Finished creating instance of bean 'jdbcSongRepositortImp'
+2018-02-16 15:27:17  [ main:1431 ] - [ DEBUG ]  Autowiring by type from bean name 'musicController' to bean named 'jdbcSongRepositortImp'
+2018-02-16 15:27:17  [ main:1431 ] - [ DEBUG ]  Finished creating instance of bean 'musicController'
+2018-02-16 15:27:17  [ main:1433 ] - [ DEBUG ]  Returning cached instance of singleton bean 'dateConfig'
+2018-02-16 15:27:17  [ main:1434 ] - [ DEBUG ]  Returning cached instance of singleton bean 'jdbcSongRepositortImp'
+2018-02-16 15:27:17  [ main:1434 ] - [ DEBUG ]  Returning cached instance of singleton bean 'dateSource'
+2018-02-16 15:27:17  [ main:1435 ] - [ DEBUG ]  Returning cached instance of singleton bean 'jdbcTemplate'
+2018-02-16 15:27:17  [ main:1436 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:17  [ main:1437 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:17  [ main:1450 ] - [ DEBUG ]  Registered injected element on class [org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$c70a1a7b]: AutowiredMethodElement for public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List)
+2018-02-16 15:27:17  [ main:1450 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration' to allow for resolving potential circular references
+2018-02-16 15:27:17  [ main:1451 ] - [ DEBUG ]  Processing injected element of bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration': AutowiredMethodElement for public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List)
+2018-02-16 15:27:17  [ main:1461 ] - [ DEBUG ]  Returning cached instance of singleton bean 'webConfig'
+2018-02-16 15:27:17  [ main:1476 ] - [ DEBUG ]  Autowiring by type from bean name 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration' to bean named 'webConfig'
+2018-02-16 15:27:17  [ main:1477 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:17  [ main:1477 ] - [ DEBUG ]  Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2018-02-16 15:27:17  [ main:1478 ] - [ DEBUG ]  Creating instance of bean 'requestMappingHandlerMapping'
+2018-02-16 15:27:17  [ main:1479 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:17  [ main:1556 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcConversionService'
+2018-02-16 15:27:17  [ main:1557 ] - [ DEBUG ]  Creating instance of bean 'mvcConversionService'
+2018-02-16 15:27:17  [ main:1557 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1647 ] - [ DEBUG ]  Eagerly caching bean 'mvcConversionService' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1658 ] - [ DEBUG ]  Finished creating instance of bean 'mvcConversionService'
+2018-02-16 15:27:18  [ main:1660 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2018-02-16 15:27:18  [ main:1661 ] - [ DEBUG ]  Creating instance of bean 'mvcResourceUrlProvider'
+2018-02-16 15:27:18  [ main:1663 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1666 ] - [ DEBUG ]  Eagerly caching bean 'mvcResourceUrlProvider' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1674 ] - [ DEBUG ]  Finished creating instance of bean 'mvcResourceUrlProvider'
+2018-02-16 15:27:18  [ main:1681 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2018-02-16 15:27:18  [ main:1682 ] - [ DEBUG ]  Creating instance of bean 'mvcContentNegotiationManager'
+2018-02-16 15:27:18  [ main:1682 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1688 ] - [ DEBUG ]  Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1695 ] - [ DEBUG ]  Finished creating instance of bean 'mvcContentNegotiationManager'
+2018-02-16 15:27:18  [ main:1721 ] - [ DEBUG ]  Eagerly caching bean 'requestMappingHandlerMapping' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1760 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'requestMappingHandlerMapping'
+2018-02-16 15:27:18  [ main:1760 ] - [ DEBUG ]  Looking for request mappings in application context: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Feb 16 15:27:16 CST 2018]; root of context hierarchy
+2018-02-16 15:27:18  [ main:1777 ] - [ DEBUG ]  1 request handler methods found on class controller.AOPController: {public java.lang.String controller.AOPController.backHome()={[/back],methods=[GET]}}
+2018-02-16 15:27:18  [ main:1788 ] - [ INFO ]  Mapped "{[/back],methods=[GET]}" onto public java.lang.String controller.AOPController.backHome()
+2018-02-16 15:27:18  [ main:1792 ] - [ DEBUG ]  1 request handler methods found on class controller.HomeController: {public java.lang.String controller.HomeController.home()={[/],methods=[GET]}}
+2018-02-16 15:27:18  [ main:1792 ] - [ INFO ]  Mapped "{[/],methods=[GET]}" onto public java.lang.String controller.HomeController.home()
+2018-02-16 15:27:18  [ main:1797 ] - [ DEBUG ]  8 request handler methods found on class controller.MusicController: {public java.lang.String controller.MusicController.addSong(org.springframework.ui.Model)={[/music/add_song],methods=[GET]}, public java.lang.String controller.MusicController.delSong()={[/music/del_song],methods=[GET]}, public java.lang.String controller.MusicController.updSong()={[/music/upd_song],methods=[GET]}, public java.lang.String controller.MusicController.browseSong(org.springframework.ui.Model)={[/music/browse_song],methods=[GET]}, public java.lang.String controller.MusicController.addSongToView(entity.Song,org.springframework.validation.Errors)={[/music/add_song],methods=[POST]}, public java.lang.String m_del_song(java.lang.String)={[/music/m_del_song],methods=[GET]}, public java.lang.String controller.MusicController.m_upd_song(entity.Song)={[/music/m_upd_song],methods=[GET]}, public java.lang.String controller.MusicController.m_search_song(java.lang.String,java.lang.String,org.springframework.ui.Model)={[/music/m_search_song],methods=[GET]}}
+2018-02-16 15:27:18  [ main:1798 ] - [ INFO ]  Mapped "{[/music/add_song],methods=[GET]}" onto public java.lang.String controller.MusicController.addSong(org.springframework.ui.Model)
+2018-02-16 15:27:18  [ main:1798 ] - [ INFO ]  Mapped "{[/music/del_song],methods=[GET]}" onto public java.lang.String controller.MusicController.delSong()
+2018-02-16 15:27:18  [ main:1799 ] - [ INFO ]  Mapped "{[/music/upd_song],methods=[GET]}" onto public java.lang.String controller.MusicController.updSong()
+2018-02-16 15:27:18  [ main:1799 ] - [ INFO ]  Mapped "{[/music/browse_song],methods=[GET]}" onto public java.lang.String controller.MusicController.browseSong(org.springframework.ui.Model)
+2018-02-16 15:27:18  [ main:1800 ] - [ INFO ]  Mapped "{[/music/add_song],methods=[POST]}" onto public java.lang.String controller.MusicController.addSongToView(entity.Song,org.springframework.validation.Errors)
+2018-02-16 15:27:18  [ main:1801 ] - [ INFO ]  Mapped "{[/music/m_del_song],methods=[GET]}" onto public java.lang.String m_del_song(java.lang.String)
+2018-02-16 15:27:18  [ main:1801 ] - [ INFO ]  Mapped "{[/music/m_upd_song],methods=[GET]}" onto public java.lang.String controller.MusicController.m_upd_song(entity.Song)
+2018-02-16 15:27:18  [ main:1802 ] - [ INFO ]  Mapped "{[/music/m_search_song],methods=[GET]}" onto public java.lang.String controller.MusicController.m_search_song(java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-02-16 15:27:18  [ main:1803 ] - [ DEBUG ]  Finished creating instance of bean 'requestMappingHandlerMapping'
+2018-02-16 15:27:18  [ main:1804 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcPathMatcher'
+2018-02-16 15:27:18  [ main:1804 ] - [ DEBUG ]  Creating instance of bean 'mvcPathMatcher'
+2018-02-16 15:27:18  [ main:1804 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1805 ] - [ DEBUG ]  Eagerly caching bean 'mvcPathMatcher' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1807 ] - [ DEBUG ]  Finished creating instance of bean 'mvcPathMatcher'
+2018-02-16 15:27:18  [ main:1808 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2018-02-16 15:27:18  [ main:1808 ] - [ DEBUG ]  Creating instance of bean 'mvcUrlPathHelper'
+2018-02-16 15:27:18  [ main:1808 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1809 ] - [ DEBUG ]  Eagerly caching bean 'mvcUrlPathHelper' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1811 ] - [ DEBUG ]  Finished creating instance of bean 'mvcUrlPathHelper'
+2018-02-16 15:27:18  [ main:1811 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2018-02-16 15:27:18  [ main:1811 ] - [ DEBUG ]  Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+2018-02-16 15:27:18  [ main:1812 ] - [ DEBUG ]  Creating instance of bean 'viewControllerHandlerMapping'
+2018-02-16 15:27:18  [ main:1812 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1813 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcPathMatcher'
+2018-02-16 15:27:18  [ main:1814 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcUrlPathHelper'
+2018-02-16 15:27:18  [ main:1815 ] - [ DEBUG ]  Eagerly caching bean 'viewControllerHandlerMapping' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1821 ] - [ DEBUG ]  Finished creating instance of bean 'viewControllerHandlerMapping'
+2018-02-16 15:27:18  [ main:1821 ] - [ DEBUG ]  Creating shared instance of singleton bean 'beanNameHandlerMapping'
+2018-02-16 15:27:18  [ main:1821 ] - [ DEBUG ]  Creating instance of bean 'beanNameHandlerMapping'
+2018-02-16 15:27:18  [ main:1822 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1824 ] - [ DEBUG ]  Eagerly caching bean 'beanNameHandlerMapping' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1832 ] - [ DEBUG ]  Looking for URL mappings in application context: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Feb 16 15:27:16 CST 2018]; root of context hierarchy
+2018-02-16 15:27:18  [ main:1832 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2018-02-16 15:27:18  [ main:1832 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2018-02-16 15:27:18  [ main:1832 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2018-02-16 15:27:18  [ main:1833 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2018-02-16 15:27:18  [ main:1833 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2018-02-16 15:27:18  [ main:1833 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2018-02-16 15:27:18  [ main:1833 ] - [ DEBUG ]  Rejected bean name 'webConfig': no URL paths identified
+2018-02-16 15:27:18  [ main:1833 ] - [ DEBUG ]  Rejected bean name 'AOPController': no URL paths identified
+2018-02-16 15:27:18  [ main:1833 ] - [ DEBUG ]  Rejected bean name 'homeController': no URL paths identified
+2018-02-16 15:27:18  [ main:1833 ] - [ DEBUG ]  Rejected bean name 'musicController': no URL paths identified
+2018-02-16 15:27:18  [ main:1834 ] - [ DEBUG ]  Rejected bean name 'dateConfig': no URL paths identified
+2018-02-16 15:27:18  [ main:1834 ] - [ DEBUG ]  Rejected bean name 'jdbcSongRepositortImp': no URL paths identified
+2018-02-16 15:27:18  [ main:1834 ] - [ DEBUG ]  Rejected bean name 'dateSource': no URL paths identified
+2018-02-16 15:27:18  [ main:1834 ] - [ DEBUG ]  Rejected bean name 'jdbcTemplate': no URL paths identified
+2018-02-16 15:27:18  [ main:1834 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration': no URL paths identified
+2018-02-16 15:27:18  [ main:1834 ] - [ DEBUG ]  Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2018-02-16 15:27:18  [ main:1835 ] - [ DEBUG ]  Rejected bean name 'mvcPathMatcher': no URL paths identified
+2018-02-16 15:27:18  [ main:1835 ] - [ DEBUG ]  Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2018-02-16 15:27:18  [ main:1835 ] - [ DEBUG ]  Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2018-02-16 15:27:18  [ main:1835 ] - [ DEBUG ]  Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2018-02-16 15:27:18  [ main:1836 ] - [ DEBUG ]  Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2018-02-16 15:27:18  [ main:1836 ] - [ DEBUG ]  Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2018-02-16 15:27:18  [ main:1836 ] - [ DEBUG ]  Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2018-02-16 15:27:18  [ main:1837 ] - [ DEBUG ]  Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2018-02-16 15:27:18  [ main:1837 ] - [ DEBUG ]  Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2018-02-16 15:27:18  [ main:1837 ] - [ DEBUG ]  Rejected bean name 'mvcConversionService': no URL paths identified
+2018-02-16 15:27:18  [ main:1838 ] - [ DEBUG ]  Rejected bean name 'mvcValidator': no URL paths identified
+2018-02-16 15:27:18  [ main:1838 ] - [ DEBUG ]  Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2018-02-16 15:27:18  [ main:1838 ] - [ DEBUG ]  Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2018-02-16 15:27:18  [ main:1838 ] - [ DEBUG ]  Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2018-02-16 15:27:18  [ main:1839 ] - [ DEBUG ]  Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2018-02-16 15:27:18  [ main:1839 ] - [ DEBUG ]  Rejected bean name 'mvcViewResolver': no URL paths identified
+2018-02-16 15:27:18  [ main:1839 ] - [ DEBUG ]  Rejected bean name 'mvcHandlerMappingIntrospector': no URL paths identified
+2018-02-16 15:27:18  [ main:1840 ] - [ DEBUG ]  Rejected bean name 'messageSource': no URL paths identified
+2018-02-16 15:27:18  [ main:1840 ] - [ DEBUG ]  Rejected bean name 'tilesConfigurer': no URL paths identified
+2018-02-16 15:27:18  [ main:1840 ] - [ DEBUG ]  Rejected bean name 'tilesViewResolver': no URL paths identified
+2018-02-16 15:27:18  [ main:1841 ] - [ DEBUG ]  Rejected bean name 'environment': no URL paths identified
+2018-02-16 15:27:18  [ main:1841 ] - [ DEBUG ]  Rejected bean name 'systemProperties': no URL paths identified
+2018-02-16 15:27:18  [ main:1841 ] - [ DEBUG ]  Rejected bean name 'systemEnvironment': no URL paths identified
+2018-02-16 15:27:18  [ main:1842 ] - [ DEBUG ]  Rejected bean name 'servletContext': no URL paths identified
+2018-02-16 15:27:18  [ main:1842 ] - [ DEBUG ]  Rejected bean name 'servletConfig': no URL paths identified
+2018-02-16 15:27:18  [ main:1842 ] - [ DEBUG ]  Rejected bean name 'contextParameters': no URL paths identified
+2018-02-16 15:27:18  [ main:1843 ] - [ DEBUG ]  Rejected bean name 'contextAttributes': no URL paths identified
+2018-02-16 15:27:18  [ main:1843 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2018-02-16 15:27:18  [ main:1843 ] - [ DEBUG ]  Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2018-02-16 15:27:18  [ main:1844 ] - [ DEBUG ]  Finished creating instance of bean 'beanNameHandlerMapping'
+2018-02-16 15:27:18  [ main:1844 ] - [ DEBUG ]  Creating shared instance of singleton bean 'resourceHandlerMapping'
+2018-02-16 15:27:18  [ main:1844 ] - [ DEBUG ]  Creating instance of bean 'resourceHandlerMapping'
+2018-02-16 15:27:18  [ main:1845 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1846 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2018-02-16 15:27:18  [ main:1846 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcUrlPathHelper'
+2018-02-16 15:27:18  [ main:1847 ] - [ DEBUG ]  Eagerly caching bean 'resourceHandlerMapping' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1847 ] - [ DEBUG ]  Finished creating instance of bean 'resourceHandlerMapping'
+2018-02-16 15:27:18  [ main:1848 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcResourceUrlProvider'
+2018-02-16 15:27:18  [ main:1848 ] - [ DEBUG ]  Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+2018-02-16 15:27:18  [ main:1849 ] - [ DEBUG ]  Creating instance of bean 'defaultServletHandlerMapping'
+2018-02-16 15:27:18  [ main:1849 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1852 ] - [ DEBUG ]  Eagerly caching bean 'defaultServletHandlerMapping' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1859 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-02-16 15:27:18  [ main:1859 ] - [ DEBUG ]  Finished creating instance of bean 'defaultServletHandlerMapping'
+2018-02-16 15:27:18  [ main:1859 ] - [ DEBUG ]  Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2018-02-16 15:27:18  [ main:1859 ] - [ DEBUG ]  Creating instance of bean 'requestMappingHandlerAdapter'
+2018-02-16 15:27:18  [ main:1860 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1903 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2018-02-16 15:27:18  [ main:1905 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcConversionService'
+2018-02-16 15:27:18  [ main:1906 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcValidator'
+2018-02-16 15:27:18  [ main:1907 ] - [ DEBUG ]  Creating instance of bean 'mvcValidator'
+2018-02-16 15:27:18  [ main:1907 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:1921 ] - [ DEBUG ]  Eagerly caching bean 'mvcValidator' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:1939 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'mvcValidator'
+2018-02-16 15:27:18  [ main:1976 ] - [ DEBUG ]  Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-16 15:27:18  [ main:1977 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.7.Final
+2018-02-16 15:27:18  [ main:1987 ] - [ DEBUG ]  Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-02-16 15:27:18  [ main:2015 ] - [ DEBUG ]  Loaded expression factory via original TCCL
+2018-02-16 15:27:18  [ main:2016 ] - [ DEBUG ]  Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-02-16 15:27:18  [ main:2017 ] - [ DEBUG ]  Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-02-16 15:27:18  [ main:2018 ] - [ DEBUG ]  Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-02-16 15:27:18  [ main:2022 ] - [ DEBUG ]  Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-02-16 15:27:18  [ main:2023 ] - [ DEBUG ]  Trying to load META-INF/validation.xml via user class loader
+2018-02-16 15:27:18  [ main:2024 ] - [ DEBUG ]  Trying to load META-INF/validation.xml via TCCL
+2018-02-16 15:27:18  [ main:2025 ] - [ DEBUG ]  Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-02-16 15:27:18  [ main:2026 ] - [ DEBUG ]  No META-INF/validation.xml found. Using annotation based configuration only.
+2018-02-16 15:27:18  [ main:2246 ] - [ DEBUG ]  HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-02-16 15:27:18  [ main:2247 ] - [ DEBUG ]  HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-02-16 15:27:18  [ main:2248 ] - [ DEBUG ]  HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-02-16 15:27:18  [ main:2248 ] - [ DEBUG ]  HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-02-16 15:27:18  [ main:2249 ] - [ DEBUG ]  HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-02-16 15:27:18  [ main:2294 ] - [ DEBUG ]  Finished creating instance of bean 'mvcValidator'
+2018-02-16 15:27:18  [ main:2307 ] - [ DEBUG ]  Eagerly caching bean 'requestMappingHandlerAdapter' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:2340 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'requestMappingHandlerAdapter'
+2018-02-16 15:27:18  [ main:2340 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Feb 16 15:27:16 CST 2018]; root of context hierarchy
+2018-02-16 15:27:18  [ main:2370 ] - [ DEBUG ]  Finished creating instance of bean 'requestMappingHandlerAdapter'
+2018-02-16 15:27:18  [ main:2371 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcConversionService'
+2018-02-16 15:27:18  [ main:2371 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcValidator'
+2018-02-16 15:27:18  [ main:2371 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2018-02-16 15:27:18  [ main:2371 ] - [ DEBUG ]  Creating instance of bean 'mvcUriComponentsContributor'
+2018-02-16 15:27:18  [ main:2372 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:2373 ] - [ DEBUG ]  Returning cached instance of singleton bean 'requestMappingHandlerAdapter'
+2018-02-16 15:27:18  [ main:2373 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcConversionService'
+2018-02-16 15:27:18  [ main:2375 ] - [ DEBUG ]  Eagerly caching bean 'mvcUriComponentsContributor' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:2377 ] - [ DEBUG ]  Finished creating instance of bean 'mvcUriComponentsContributor'
+2018-02-16 15:27:18  [ main:2378 ] - [ DEBUG ]  Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+2018-02-16 15:27:18  [ main:2378 ] - [ DEBUG ]  Creating instance of bean 'httpRequestHandlerAdapter'
+2018-02-16 15:27:18  [ main:2378 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:2379 ] - [ DEBUG ]  Eagerly caching bean 'httpRequestHandlerAdapter' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:2381 ] - [ DEBUG ]  Finished creating instance of bean 'httpRequestHandlerAdapter'
+2018-02-16 15:27:18  [ main:2382 ] - [ DEBUG ]  Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+2018-02-16 15:27:18  [ main:2383 ] - [ DEBUG ]  Creating instance of bean 'simpleControllerHandlerAdapter'
+2018-02-16 15:27:18  [ main:2383 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:2383 ] - [ DEBUG ]  Eagerly caching bean 'simpleControllerHandlerAdapter' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:2386 ] - [ DEBUG ]  Finished creating instance of bean 'simpleControllerHandlerAdapter'
+2018-02-16 15:27:18  [ main:2387 ] - [ DEBUG ]  Creating shared instance of singleton bean 'handlerExceptionResolver'
+2018-02-16 15:27:18  [ main:2387 ] - [ DEBUG ]  Creating instance of bean 'handlerExceptionResolver'
+2018-02-16 15:27:18  [ main:2387 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:2389 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2018-02-16 15:27:18  [ main:2390 ] - [ DEBUG ]  Looking for exception mappings: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Feb 16 15:27:16 CST 2018]; root of context hierarchy
+2018-02-16 15:27:18  [ main:2393 ] - [ DEBUG ]  Eagerly caching bean 'handlerExceptionResolver' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:2396 ] - [ DEBUG ]  Finished creating instance of bean 'handlerExceptionResolver'
+2018-02-16 15:27:18  [ main:2396 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcViewResolver'
+2018-02-16 15:27:18  [ main:2396 ] - [ DEBUG ]  Creating instance of bean 'mvcViewResolver'
+2018-02-16 15:27:18  [ main:2396 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-02-16 15:27:18  [ main:2399 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2018-02-16 15:27:18  [ main:2406 ] - [ DEBUG ]  Eagerly caching bean 'mvcViewResolver' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:2409 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'mvcViewResolver'
+2018-02-16 15:27:18  [ main:2410 ] - [ DEBUG ]  Finished creating instance of bean 'mvcViewResolver'
+2018-02-16 15:27:18  [ main:2410 ] - [ DEBUG ]  Returning cached instance of singleton bean 'messageSource'
+2018-02-16 15:27:18  [ main:2410 ] - [ DEBUG ]  Creating shared instance of singleton bean 'tilesConfigurer'
+2018-02-16 15:27:18  [ main:2410 ] - [ DEBUG ]  Creating instance of bean 'tilesConfigurer'
+2018-02-16 15:27:18  [ main:2411 ] - [ DEBUG ]  Returning cached instance of singleton bean 'webConfig'
+2018-02-16 15:27:18  [ main:2435 ] - [ DEBUG ]  Eagerly caching bean 'tilesConfigurer' to allow for resolving potential circular references
+2018-02-16 15:27:18  [ main:2441 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'tilesConfigurer'
+2018-02-16 15:27:18  [ main:2480 ] - [ DEBUG ]  register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/home/guohezuzi/.m2/repository/org/apache/tiles/tiles-core/3.0.8/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+2018-02-16 15:27:19  [ main:2576 ] - [ INFO ]  Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2018-02-16 15:27:19  [ main:2577 ] - [ DEBUG ]  Finished creating instance of bean 'tilesConfigurer'
+2018-02-16 15:27:19  [ main:2577 ] - [ DEBUG ]  Creating shared instance of singleton bean 'tilesViewResolver'
+2018-02-16 15:27:19  [ main:2577 ] - [ DEBUG ]  Creating instance of bean 'tilesViewResolver'
+2018-02-16 15:27:19  [ main:2578 ] - [ DEBUG ]  Returning cached instance of singleton bean 'webConfig'
+2018-02-16 15:27:19  [ main:2584 ] - [ DEBUG ]  Eagerly caching bean 'tilesViewResolver' to allow for resolving potential circular references
+2018-02-16 15:27:19  [ main:2595 ] - [ DEBUG ]  Finished creating instance of bean 'tilesViewResolver'
+2018-02-16 15:27:19  [ main:2595 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-02-16 15:27:19  [ main:2664 ] - [ DEBUG ]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@42dd7d82]
+2018-02-16 15:27:19  [ main:2664 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-02-16 15:27:19  [ main:2668 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcResourceUrlProvider'
+2018-02-16 15:27:19  [ main:2671 ] - [ DEBUG ]  Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2018-02-16 15:27:19  [ main:2672 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2018-02-16 15:27:19  [ main:2677 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2018-02-16 15:27:19  [ main:2678 ] - [ DEBUG ]  Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@54997f67]
+2018-02-16 15:27:19  [ main:2679 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2018-02-16 15:27:19  [ main:2685 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2018-02-16 15:27:19  [ main:2686 ] - [ DEBUG ]  Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@3eff6846]
+2018-02-16 15:27:19  [ main:2686 ] - [ DEBUG ]  Returning cached instance of singleton bean 'requestMappingHandlerMapping'
+2018-02-16 15:27:19  [ main:2687 ] - [ DEBUG ]  Returning cached instance of singleton bean 'viewControllerHandlerMapping'
+2018-02-16 15:27:19  [ main:2687 ] - [ DEBUG ]  Returning cached instance of singleton bean 'beanNameHandlerMapping'
+2018-02-16 15:27:19  [ main:2687 ] - [ DEBUG ]  Returning cached instance of singleton bean 'resourceHandlerMapping'
+2018-02-16 15:27:19  [ main:2688 ] - [ DEBUG ]  Returning cached instance of singleton bean 'defaultServletHandlerMapping'
+2018-02-16 15:27:19  [ main:2688 ] - [ DEBUG ]  Returning cached instance of singleton bean 'requestMappingHandlerAdapter'
+2018-02-16 15:27:19  [ main:2689 ] - [ DEBUG ]  Returning cached instance of singleton bean 'httpRequestHandlerAdapter'
+2018-02-16 15:27:19  [ main:2689 ] - [ DEBUG ]  Returning cached instance of singleton bean 'simpleControllerHandlerAdapter'
+2018-02-16 15:27:19  [ main:2689 ] - [ DEBUG ]  Returning cached instance of singleton bean 'handlerExceptionResolver'
+2018-02-16 15:27:19  [ main:2691 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2018-02-16 15:27:19  [ main:2699 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2018-02-16 15:27:19  [ main:2700 ] - [ DEBUG ]  Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@d0a2c82]
+2018-02-16 15:27:19  [ main:2700 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcViewResolver'
+2018-02-16 15:27:19  [ main:2700 ] - [ DEBUG ]  Returning cached instance of singleton bean 'tilesViewResolver'
+2018-02-16 15:27:19  [ main:2702 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2018-02-16 15:27:19  [ main:2710 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2018-02-16 15:27:19  [ main:2710 ] - [ DEBUG ]  Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@fd14789]
+2018-02-16 15:27:19  [ main:2710 ] - [ DEBUG ]  Looking for resource handler mappings
+2018-02-16 15:27:19  [ main:2711 ] - [ DEBUG ]  Returning cached instance of singleton bean 'defaultServletHandlerMapping'
+2018-02-16 15:27:19  [ main:2711 ] - [ DEBUG ]  No resource handling mappings found
+2018-02-16 15:27:19  [ main:2713 ] - [ DEBUG ]  Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2018-02-16 15:27:19  [ main:2725 ] - [ DEBUG ]  Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException; remaining name 'spring.liveBeansView.mbeanDomain'
+2018-02-16 15:27:19  [ main:2726 ] - [ DEBUG ]  Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2018-02-16 15:27:19  [ main:2727 ] - [ DEBUG ]  JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: null. Returning null.
+2018-02-16 15:27:19  [ main:2727 ] - [ DEBUG ]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+2018-02-16 15:27:19  [ main:2730 ] - [ DEBUG ]  Published WebApplicationContext of servlet 'dispatcher' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcher]
+2018-02-16 15:27:19  [ main:2731 ] - [ INFO ]  FrameworkServlet 'dispatcher': initialization completed in 2423 ms
+2018-02-16 15:27:19  [ main:2731 ] - [ DEBUG ]  Servlet 'dispatcher' configured successfully
+2018-02-16 15:29:07  [ qtp504006221-21:110990 ] - [ DEBUG ]  DispatcherServlet with name 'dispatcher' processing GET request for [/]
+2018-02-16 15:29:07  [ qtp504006221-21:110994 ] - [ DEBUG ]  Looking up handler method for path /
+2018-02-16 15:29:07  [ qtp504006221-21:110996 ] - [ DEBUG ]  Returning handler method [public java.lang.String controller.HomeController.home()]
+2018-02-16 15:29:07  [ qtp504006221-21:110996 ] - [ DEBUG ]  Returning cached instance of singleton bean 'homeController'
+2018-02-16 15:29:07  [ qtp504006221-21:110997 ] - [ DEBUG ]  Last-Modified value for [/] is: -1
+2018-02-16 15:29:07  [ qtp504006221-21:111015 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'home'
+2018-02-16 15:29:07  [ qtp504006221-21:111016 ] - [ DEBUG ]  Rendering view [org.springframework.web.servlet.view.JstlView: name 'home'; URL [/WEB-INF/views/home.jsp]] in DispatcherServlet with name 'dispatcher'
+2018-02-16 15:29:07  [ qtp504006221-21:111022 ] - [ DEBUG ]  Forwarding to resource [/WEB-INF/views/home.jsp] in InternalResourceView 'home'
+2018-02-16 15:29:08  [ qtp504006221-21:111977 ] - [ DEBUG ]  Loading properties [messages_zh_CN.properties] with encoding 'utf-8'
+2018-02-16 15:29:08  [ qtp504006221-21:111995 ] - [ DEBUG ]  Successfully completed request
+2018-02-16 15:29:11  [ qtp504006221-17:114954 ] - [ DEBUG ]  DispatcherServlet with name 'dispatcher' processing GET request for [/music/add_song]
+2018-02-16 15:29:11  [ qtp504006221-17:114954 ] - [ DEBUG ]  Looking up handler method for path /music/add_song
+2018-02-16 15:29:11  [ qtp504006221-17:114955 ] - [ DEBUG ]  Returning handler method [public java.lang.String controller.MusicController.addSong(org.springframework.ui.Model)]
+2018-02-16 15:29:11  [ qtp504006221-17:114955 ] - [ DEBUG ]  Returning cached instance of singleton bean 'musicController'
+2018-02-16 15:29:11  [ qtp504006221-17:114956 ] - [ DEBUG ]  Last-Modified value for [/music/add_song] is: -1
+2018-02-16 15:29:11  [ qtp504006221-17:114975 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'add_song'
+2018-02-16 15:29:11  [ qtp504006221-17:114976 ] - [ DEBUG ]  Rendering view [org.springframework.web.servlet.view.JstlView: name 'add_song'; URL [/WEB-INF/views/add_song.jsp]] in DispatcherServlet with name 'dispatcher'
+2018-02-16 15:29:11  [ qtp504006221-17:114976 ] - [ DEBUG ]  Added model object 'song' of type [entity.Song] to request in view with name 'add_song'
+2018-02-16 15:29:11  [ qtp504006221-17:114976 ] - [ DEBUG ]  Added model object 'org.springframework.validation.BindingResult.song' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'add_song'
+2018-02-16 15:29:11  [ qtp504006221-17:114977 ] - [ DEBUG ]  Forwarding to resource [/WEB-INF/views/add_song.jsp] in InternalResourceView 'add_song'
+2018-02-16 15:29:11  [ qtp504006221-17:115326 ] - [ DEBUG ]  No property editor [java.lang.StringEditor] found for type java.lang.String according to 'Editor' suffix convention
+2018-02-16 15:29:11  [ qtp504006221-17:115345 ] - [ DEBUG ]  Successfully completed request
+2018-02-16 15:29:13  [ qtp504006221-21:117342 ] - [ DEBUG ]  DispatcherServlet with name 'dispatcher' processing GET request for [/]
+2018-02-16 15:29:13  [ qtp504006221-21:117343 ] - [ DEBUG ]  Looking up handler method for path /
+2018-02-16 15:29:13  [ qtp504006221-21:117344 ] - [ DEBUG ]  Returning handler method [public java.lang.String controller.HomeController.home()]
+2018-02-16 15:29:13  [ qtp504006221-21:117344 ] - [ DEBUG ]  Returning cached instance of singleton bean 'homeController'
+2018-02-16 15:29:13  [ qtp504006221-21:117345 ] - [ DEBUG ]  Last-Modified value for [/] is: -1
+2018-02-16 15:29:13  [ qtp504006221-21:117347 ] - [ DEBUG ]  Rendering view [org.springframework.web.servlet.view.JstlView: name 'home'; URL [/WEB-INF/views/home.jsp]] in DispatcherServlet with name 'dispatcher'
+2018-02-16 15:29:13  [ qtp504006221-21:117348 ] - [ DEBUG ]  Forwarding to resource [/WEB-INF/views/home.jsp] in InternalResourceView 'home'
+2018-02-16 15:29:13  [ qtp504006221-21:117354 ] - [ DEBUG ]  Successfully completed request
