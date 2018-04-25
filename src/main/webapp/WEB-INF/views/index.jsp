@@ -75,7 +75,7 @@
             <div class="col">
                 <nav class="navbar navbar-expand justify-content-center">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="/music" class="nav-link">音乐</a></li>
+                        <li class="nav-item"><a href="<c:url value="/music"/>" class="nav-link">音乐</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">开发中...</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">开发中...</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">开发中...</a></li>
@@ -89,25 +89,28 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="music-card">
-                                <div class="music-link" style="background-image: url(${song[0].pic_url}) ">
+                                <div class="music-link"
+                                     style="background-image: url(<c:url value="${song[0].pic_url}"/>) ">
                                 </div>
-                                <div class="play" data-content="${song[0].song_url}">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="music-card">
-                                <div class="music-link" style="background-image: url(${song[1].pic_url}) ">
-                                </div>
-                                <div class="play" data-content="${song[1].song_url}">
+                                <div class="play" data-content="<c:url value="${song[0].song_url}"/>">
                                 </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="music-card">
-                                <div class="music-link" style="background-image: url(${song[2].pic_url}) ">
+                                <div class="music-link"
+                                     style="background-image: url(<c:url value="${song[1].pic_url}"/>) ">
                                 </div>
-                                <div class="play" data-content="${song[2].song_url}">
+                                <div class="play" data-content="<c:url value="${song[1].song_url}"/>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="music-card">
+                                <div class="music-link"
+                                     style="background-image: url(<c:url value="${song[2].pic_url}"/>) ">
+                                </div>
+                                <div class="play" data-content="<c:url value="${song[2].song_url}"/>">
                                 </div>
                             </div>
                         </div>
@@ -117,25 +120,28 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="music-card">
-                                <div class="music-link" style="background-image: url(${song[3].pic_url}) ">
+                                <div class="music-link"
+                                     style="background-image: url(<c:url value="${song[3].pic_url}"/>) ">
                                 </div>
-                                <div class="play" data-content="${song[3].song_url}">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="music-card">
-                                <div class="music-link" style="background-image: url(${song[4].pic_url}) ">
-                                </div>
-                                <div class="play" data-content="${song[4].song_url}">
+                                <div class="play" data-content="<c:url value="${song[3].song_url}"/>">
                                 </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="music-card">
-                                <div class="music-link" style="background-image: url(${song[5].pic_url}) ">
+                                <div class="music-link"
+                                     style="background-image: url(<c:url value="${song[4].pic_url}"/>) ">
                                 </div>
-                                <div class="play" data-content="${song[5].song_url}">
+                                <div class="play" data-content="<c:url value="${song[4].song_url}"/>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="music-card">
+                                <div class="music-link"
+                                     style="background-image: url(<c:url value="${song[5].pic_url}"/>) ">
+                                </div>
+                                <div class="play" data-content="<c:url value="${song[5].song_url}"/>">
                                 </div>
                             </div>
                         </div>
@@ -159,14 +165,15 @@
     console.log(${isLogin});
     var $play = $('.play');
     $play.click(function () {
-        var status = $(this).css('background-image');
-        if (status === "url(\"http://localhost:8080/resources/img/play-icon.png\")") {
+        var bkg_url = $(this).css('background-image').split("/").pop();
+        var icon = bkg_url.split(".")[0];
+        if (icon === "play-icon") {
             $(".play").css({
-                'background-image': 'url("/resources/img/play-icon.png")',
-                'display': 'none'
+                'background-image': 'url(<c:url value="/resources/img/play-icon.png"/>)',
+                'display':'none'
             });
             $(this).css(
-                'background-image', 'url("/resources/img/play-pause.png")'
+                'background-image', 'url(<c:url value="/resources/img/play-pause.png"/>)'
             );
             var player = $('.player');
             player.attr('src', $(this).attr('data-content'));
@@ -174,7 +181,7 @@
         }
         else {
             $(this).css({
-                'background-image': 'url("/resources/img/play-icon.png")'
+                'background-image': 'url(<c:url value="/resources/img/play-icon.png"/>)'
             });
             $('.player').get(0).pause();
         }
@@ -187,8 +194,9 @@
     });
     $music.mouseout(function () {
         //console.log('out');
-        var status = $(this).children("div.play").first().css('background-image');
-        if (status === "url(\"http://localhost:8080/resources/img/play-icon.png\")") {
+        var bkg_url = $(this).children("div.play").first().css('background-image').split("/").pop();
+        var icon = bkg_url.split(".")[0];
+        if (icon === "play-icon") {
             $(this).children("div.play").first().css('display', 'none');
         }
     });

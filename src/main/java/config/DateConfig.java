@@ -33,8 +33,8 @@ public class DateConfig{
     public DataSource dateSource(){
         DriverManagerDataSource dataSource=new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/MusicSystem?serverTimezone=Hongkong&useSSL=false");
-        dataSource.setUsername("zuzi");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/JavaCMS?serverTimezone=Hongkong&useSSL=false");
+        dataSource.setUsername("javacms");
         dataSource.setPassword("123456");
         return dataSource;
     }
@@ -70,7 +70,7 @@ public class DateConfig{
     }*/
 
     //mongodb连接数据库Bean
-    @Bean
+    /*@Bean
     MongoClientFactoryBean mongoClientFactoryBean(){
         MongoClientFactoryBean mongoClientFactoryBean=new MongoClientFactoryBean();
         mongoClientFactoryBean.setHost("127.0.0.1");
@@ -83,7 +83,7 @@ public class DateConfig{
     @Bean
     public MongoOperations mongoTemplate(MongoClient mongo){
         return new MongoTemplate(mongo,"test");
-    }
+    }*/
 
    /* //redis连接数据库配置
     @Bean
