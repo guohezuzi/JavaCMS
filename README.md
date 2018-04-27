@@ -17,7 +17,7 @@
 Ubuntu+IDEA+WebStorm
 
 ## 展示
-展示网站: www.guohezuzi.top/JavaCMS
+展示网站: www.guohezuzi.top
 
 图片:
 ![](./data/show1.png)
