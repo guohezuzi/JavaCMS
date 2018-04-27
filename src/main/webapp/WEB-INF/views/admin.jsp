@@ -12,7 +12,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Bootstrap 4 Template</title>
+    <title>管理员界面</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -24,7 +24,7 @@
     <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
     <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="<c:url value="/resources/css/admin.css"/>" type="text/css">
+    <link rel="stylesheet" href="/resources/css/admin.css" type="text/css">
 </head>
 
 <body>
@@ -178,6 +178,7 @@
                             </td>
                             <td>
                                 <p class="default-data">${song.issue_date}</p>
+
                                 <div class="change-input">
                                     <input name="issue_date" class="form-control-sm" type="date" size="2"
                                            placeholder="${song.issue_date}">

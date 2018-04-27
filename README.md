@@ -8,6 +8,11 @@
 * 尽量增加注释的编写
 * 该项目仅为学习过程的实践测试,非正式作品
 
+## 特征
+* 前端使用Bootstrap开发
+* 后端使用SSM框架(spring+springMVC+mybatis)
+* 服务器使用nginx+tomcat反向代理
+
 ## 开发平台
 Ubuntu+IDEA+WebStorm
 
