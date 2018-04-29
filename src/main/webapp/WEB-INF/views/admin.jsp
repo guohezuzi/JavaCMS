@@ -24,6 +24,7 @@
     <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
     <!-- Link to your CSS file -->
+    <%--服务器端通过nginx代理可以使用绝对路径--%>
     <link rel="stylesheet" href="/resources/css/admin.css" type="text/css">
 </head>
 

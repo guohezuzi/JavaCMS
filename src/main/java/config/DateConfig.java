@@ -29,6 +29,7 @@ import javax.sql.DataSource;
 @Configuration
 @MapperScan({"data/mapper"})
 public class DateConfig{
+    //数据源
     @Bean
     public DataSource dateSource(){
         DriverManagerDataSource dataSource=new DriverManagerDataSource();
@@ -99,7 +100,7 @@ public class DateConfig{
         redisTemplate.afterPropertiesSet();
         return redisTemplate;
     }*/
-
+    //spring自带JDBC操作
     @Bean
     public JdbcOperations jdbcTemplate(DataSource dataSource) {
         return new JdbcTemplate(dataSource);

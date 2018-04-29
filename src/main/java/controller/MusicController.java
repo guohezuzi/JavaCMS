@@ -48,7 +48,7 @@ public class MusicController {
         return "admin";
     }
 
-    //
+    //添加歌曲的处理
     @RequestMapping(value = "m_add_song", method = POST)
     public String addSongToView(@RequestPart("song_file") MultipartFile music_file,
                                 @RequestPart("song_pic") MultipartFile pic_file,
@@ -60,6 +60,7 @@ public class MusicController {
         return "forward:admin";
     }
 
+    //更新歌曲的处理
     @RequestMapping(value = "m_upd_song", method = GET)
     public String m_upd_song(Song song, Model model,
                              @RequestParam(value = "update", required = false) String update,
@@ -78,6 +79,7 @@ public class MusicController {
         return "forward:admin";
     }
 
+    //搜索歌曲的处理
     @RequestMapping(value = "m_search_song", method = GET)
     public String m_search_song(@RequestParam("search") String search,
                                 @RequestParam("select") String select,

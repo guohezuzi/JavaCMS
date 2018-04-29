@@ -80,7 +80,7 @@ public class JdbcSongRepositoryImp implements SongRepository {
         return jdbc.query(SEARCH_SONG_AS_SINGER,new SongRowMapper(), singer);
     }
 
-
+    //查询30条数据
     @Override
     public ArrayList<List<Song> > showThirtySong(int start) {
         ArrayList<List<Song> > result=new ArrayList<>();
