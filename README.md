@@ -17,7 +17,7 @@
 Ubuntu+IDEA+WebStorm
 
 ## 展示
-展示网站: www.guohezuzi.top
+展示网站: www.guohezuzi.top(由于vps内存不足,有时会挂,等深入学习liunx后再修)
 
 图片:
 ![](./data/show1.png)
