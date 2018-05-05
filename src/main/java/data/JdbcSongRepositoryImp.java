@@ -84,7 +84,8 @@ public class JdbcSongRepositoryImp implements SongRepository {
     @Override
     public ArrayList<List<Song> > showThirtySong(int start) {
         ArrayList<List<Song> > result=new ArrayList<>();
-        while (start<30) {
+        int max=start+30;
+        while (start<max) {
             String limit=Integer.toString(start)+",6";
             String query=SHOW_SONG.replaceAll("\\d+,\\d+",limit);
             List<Song> songList=jdbc.query(query,new SongRowMapperForWeb());
