@@ -129,6 +129,9 @@
         margin: 15px;
     }
 }*/
-
+.error-message{
+    display: none;
+    color: #ff0300;
+}
 
 

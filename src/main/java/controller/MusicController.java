@@ -1,18 +1,21 @@
 package controller;
 
 import data.SongRepository;
-import entity.Song;
 import data.mapper.SongMapper;
+import entity.Song;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
@@ -94,6 +97,15 @@ public class MusicController {
             default:
                 return null;
         }
+    }
 
+    /**
+    * 异步请求加载更多数据
+    * @param page 第多少页数据 30一页(起始为第0页)
+    */
+    @RequestMapping(value = "loading",method = GET)
+    @ResponseBody
+    public ArrayList<List<Song>> load(@RequestParam int page){
+        return songRepository.showThirtySong(30*page);
     }
 }

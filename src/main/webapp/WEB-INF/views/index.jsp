@@ -50,17 +50,19 @@
                     <input id="temp" type="button" class="btn btn-secondary btn-block" value="注册">
                 </div>
             </form>
-            <form action="<c:url value="/admin_login"/>" id="admin-login-form" class="tab-pane" method="post">
+            <form action="<c:url value="/adminLogin"/>" id="admin-login-form" class="tab-pane" method="post">
                 <div class="form-group">
                     <label>管理员账户:</label>
-                    <input name="name" type="text" class="form-control">
+                    <input id="admin-name" name="name" type="text" class="form-control">
+                    <small id="admin-name-err" class="error-message"></small>
                 </div>
                 <div class="form-group">
                     <label>密码:</label>
-                    <input name="password" type="password" class="form-control">
+                    <input id="admin-password" name="password" type="password" class="form-control">
+                    <small id="admin-password-err" class="error-message"></small>
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="btn btn-secondary btn-block" value="登录">
+                    <input id="login-button" type="button" class="btn btn-secondary btn-block" value="登录">
                 </div>
             </form>
         </div>
@@ -150,7 +152,7 @@
             </div>
         </c:forEach>
         <div class="row">
-            <div class="col"></div>
+            <div class="col" id="test">测试</div>
         </div>
     </div>
 </div>
@@ -161,47 +163,6 @@
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    console.log(${isLogin});
-    var $play = $('.play');
-    $play.click(function () {
-        var bkg_url = $(this).css('background-image').split("/").pop();
-        var icon = bkg_url.split(".")[0];
-        if (icon === "play-icon") {
-            $(".play").css({
-                'background-image': 'url(/resources/img/play-icon.png)',
-                'display': 'none'
-            });
-            $(this).css(
-                'background-image', 'url(/resources/img/play-pause.png)'
-            );
-            var player = $('.player');
-            player.attr('src', $(this).attr('data-content'));
-            player.get(0).play();
-        }
-        else {
-            $(this).css({
-                'background-image': 'url(/resources/img/play-icon.png)'
-            });
-            $('.player').get(0).pause();
-        }
-    });
-    var $music = $('.music-card');
-    $music.mouseover(function () {
-        //console.log($(this).children("div.play").first().css('display'));
-        $(this).children("div.play").first().css('display', 'block');
-        //console.log($(this).children("div.play").first().css('display'));
-    });
-    $music.mouseout(function () {
-        //console.log('out');
-        var bkg_url = $(this).children("div.play").first().css('background-image').split("/").pop();
-        var icon = bkg_url.split(".")[0];
-        if (icon === "play-icon") {
-            $(this).children("div.play").first().css('display', 'none');
-        }
-    });
-
-</script>
-
+<script src="/resources/js/index.js"></script>
 </body>
 </html>

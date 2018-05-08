@@ -209,7 +209,7 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.bootcss.com/popper.js/1.14.3/esm/popper.min.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
