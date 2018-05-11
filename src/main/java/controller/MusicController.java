@@ -44,12 +44,6 @@ public class MusicController {
     public String musicHome(){
         return "forward:/index";
     }
-    //管理员界面跳转
-    @RequestMapping(value = "admin", method = GET)
-    public String admin(Model model) {
-        model.addAttribute("songList", songRepository.showAllSong());
-        return "admin";
-    }
 
     //添加歌曲的处理
     @RequestMapping(value = "m_add_song", method = POST)

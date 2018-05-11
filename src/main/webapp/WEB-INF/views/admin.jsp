@@ -76,7 +76,7 @@
                 <ul class="nav justify-content-between">
                     <li class="nav-item">
                         <div class="btn-group">
-                            <a href="<c:url value="/music/admin"/>" class="btn btn-primary">显示所有歌曲</a>
+                            <a href="<c:url value="/admin"/>" class="btn btn-primary">显示所有歌曲</a>
                             <a href="#add" class="btn btn-info" data-toggle="collapse">增加歌曲</a>
                         </div>
                     </li>
@@ -215,12 +215,12 @@
     $(document).ready(function () {
         /*切换修改数据*/
         $('.default-data').click(function () {
-            $(this).css('display', 'none');
-            $(this).next().css("display", "flex");
+            $(this).hide();
+            $(this).next().css('display','flex');
         });
 
         $('.cancel-change').click(function () {
-            $(this).parent().css('display', 'none');
+            $(this).parent().hide();
             $(this).parent().prev().css('display', 'block');
         });
     })

@@ -4,7 +4,7 @@
 
 ## 原则
 * 若用到第三方jar包,使用最新版本编写
-* 代码严格遵循第三方规范编写(如[阿里java编码规范](https://github.com/alibaba/p3c)、[W3Cschool前端编码规范](https://www.w3cschool.cn/bdl2e3/)...)
+* 代码严格遵循第三方规范编写(如[阿里java编码规范](https://github.com/alibaba/p3c)、[Google 编码规范](https://google.github.io/styleguide)...)
 * 尽量增加注释的编写
 * 该项目仅为学习过程的实践测试,非正式作品
 
@@ -17,7 +17,7 @@
 Ubuntu+IDEA+WebStorm
 
 ## 展示
-展示网站: www.guohezuzi.top(由于vps内存不足,有时会挂,等深入学习liunx后再修)
+展示网站: www.guohezuzi.top(由于vps内存不足,有时会挂,待优化(前端渲染或优化web容器))
 
 图片:
 ![](./data/show1.png)

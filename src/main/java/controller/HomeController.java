@@ -6,11 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
@@ -40,6 +38,13 @@ public class HomeController {
         //model.addAttribute("count",userRepository.getCount());
         model.addAttribute("songList", songRepository.showThirtySong(0));
         return "index";
+    }
+
+    //管理员界面跳转
+    @RequestMapping(value = "admin", method = GET)
+    public String admin(Model model) {
+        model.addAttribute("songList", songRepository.showAllSong());
+        return "admin";
     }
 
    /* //传统jsp验证方法
@@ -101,7 +106,7 @@ public class HomeController {
         String right_password = userRepository.findPassByName(name);
         if (right_password!=null && right_password.equals(password)) {
             //设置cookie session
-            return "admin";
+            return "redirect:admin";
         }
         return "index";
     }
