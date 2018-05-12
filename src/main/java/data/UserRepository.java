@@ -1,11 +1,5 @@
 package data;
 
-import entity.User;
-import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoOperations;
-import org.springframework.stereotype.Repository;
-
 /**
  * \* Created with IntelliJ IDEA.
  * \* User: guohezuzi

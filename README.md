@@ -4,7 +4,7 @@
 
 ## 原则
 * 若用到第三方jar包,使用最新版本编写
-* 代码严格遵循第三方规范编写(如[阿里java编码规范](https://github.com/alibaba/p3c)、[Google 编码规范](https://google.github.io/styleguide)...)
+* 代码参考第三方规范编写(如[阿里java编码规范](https://github.com/alibaba/p3c)、[Google 编码规范](https://google.github.io/styleguide)...)
 * 尽量增加注释的编写
 * 该项目仅为学习过程的实践测试,非正式作品
 

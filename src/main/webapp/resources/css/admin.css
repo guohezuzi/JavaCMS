@@ -30,6 +30,20 @@
     min-height: 100vh;
 }
 
+#search-content{
+    border-top-right-radius:0;
+    border-bottom-right-radius: 0;
+}
+
+#search-select{
+    border-radius: 0;
+}
+
+#search-submit{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 .manage-select {
     margin-top: 1rem;
 }

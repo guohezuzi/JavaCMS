@@ -82,12 +82,14 @@
                     </li>
                     <li class="nav-item">
                         <form action="<c:url value="/music/m_search_song"/>" class="form-group form-inline">
-                            <input type="search" name="search" class="form-control" placeholder="搜点什么吧...">
-                            <select class="form-control" name="select" id="search-select" title="类型">
-                                <option value="name">歌名</option>
-                                <option value="singer">歌手</option>
-                            </select>
-                            <input type="submit" class="form-control" value="搜索">
+                            <div class="form-group">
+                                <input id="search-content" type="search" name="search" class="form-control" placeholder="搜点什么吧...">
+                                <select id="search-select" class="form-control " name="select" title="类型">
+                                    <option value="name">歌名</option>
+                                    <option value="singer">歌手</option>
+                                </select>
+                                <input id="search-submit" type="submit" class="form-control" value="搜索">
+                            </div>
                         </form>
                     </li>
                 </ul>
@@ -99,24 +101,32 @@
                       enctype="multipart/form-data">
                     <div class="form-group">
                         <label>歌名:</label>
-                        <input class="form-control bg-secondary" name="name" type="text" size="5">
+                        <input class="form-control bg-secondary" name="song-name" type="text"
+                               size="5" title="song_name" data-rule="minLength:1|maxLength:12">
+                        <div class="text-danger" id="song-name-input-error"></div>
 
                         <label>歌手:</label>
-                        <input class="form-control bg-secondary" name="singer" type="text" size="5">
+                        <input class="form-control bg-secondary" name="singer" type="text" size="5"
+                               title="song_player" data-rule="minLength:1|maxLength:12">
+                        <div class="text-danger" id="singer-input-error"></div>
 
                         <label>作曲: </label>
-                        <input class="form-control bg-secondary" name="author" type="text" size="5">
+                        <input class="form-control bg-secondary" name="author" type="text" size="5"
+                               title="song_author" data-rule="minLength:1|maxLength:12">
+                        <div class="text-danger" id="author-input-error"></div>
 
                         <label>专辑:</label>
-                        <input class="form-control bg-secondary" name="album" type="text" size="5">
+                        <input class="form-control bg-secondary" name="album" type="text" size="5"
+                               title="song_album" data-rule="minLength:1|maxLength:12">
+                        <div class="text-danger" id="album-input-error"></div>
 
                         <label>发行日期:</label>
-                        <input class="form-control bg-secondary" name="issue_date" type="date">
+                        <input class="form-control bg-secondary" name="issue-date" type="date" title="song_date">
 
                         <label>上传封面:</label>
-                        <input class="form-control bg-secondary" name="song_pic" type="file" accept="image/jpeg"
+                        <input class="form-control bg-secondary" name="song-pic" type="file" accept="image/jpeg"
                                size="2">
-                        上传歌曲:<input class="form-control bg-secondary" name="song_file" type="file" accept="audio/mpeg"
+                        上传歌曲:<input class="form-control bg-secondary" name="song-file" type="file" accept="audio/mpeg"
                                     size="2">
                         <input type="submit" class="form-control btn-secondary" value="增加">
                     </div>
@@ -211,21 +221,9 @@
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function () {
-        /*切换修改数据*/
-        $('.default-data').click(function () {
-            $(this).hide();
-            $(this).next().css('display','flex');
-        });
-
-        $('.cancel-change').click(function () {
-            $(this).parent().hide();
-            $(this).parent().prev().css('display', 'block');
-        });
-    })
-
-</script>
+<script src="/resources/js/validator.js"></script>
+<script src="/resources/js/input.js"></script>
+<script src="/resources/js/admin.js"></script>
 
 </body>
 
