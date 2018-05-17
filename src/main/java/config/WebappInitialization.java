@@ -42,7 +42,7 @@ public class WebappInitialization extends AbstractAnnotationConfigDispatcherServ
     @Override
     protected void customizeRegistration(ServletRegistration.Dynamic registration) {
         registration.setMultipartConfig(
-                new MultipartConfigElement("/home/guohezuzi/Code/date/MusicSystem/music/" ,16777216, 33554432, 0)
+                new MultipartConfigElement("/home/guohezuzi/Code/IdeaProjects/JavaCMS/src/main/webapp/resources/" ,16777216, 33554432, 0)
         );
     }
 }

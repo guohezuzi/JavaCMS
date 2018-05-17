@@ -14,7 +14,7 @@
     <title>首页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/resources/js/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="/resources/css/music.css" type="text/css">
 </head>
 <body>
@@ -151,9 +151,13 @@
                 </div>
             </div>
         </c:forEach>
-        <div class="row">
-            <div class="col" id="test">测试</div>
+
+        <div id="loading-wrap" class="row justify-content-center">
+            <div class="col-auto">
+                <a id="loading" class="text-dark">加载更多</a>
+            </div>
         </div>
+
     </div>
 </div>
 <div>

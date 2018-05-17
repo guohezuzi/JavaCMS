@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
@@ -41,10 +45,17 @@ public class HomeController {
     }
 
     //管理员界面跳转
-    @RequestMapping(value = "admin", method = GET)
-    public String admin(Model model) {
-        model.addAttribute("songList", songRepository.showAllSong());
-        return "admin";
+    @RequestMapping(value = "admin", method = {GET,POST})
+    public String admin(Model model, HttpServletRequest res) {
+        Cookie[] cookies=res.getCookies();
+        for (Cookie c :
+                cookies) {
+            if (c.getName().equals("isLogin")){
+                model.addAttribute("songList", songRepository.showAllSong());
+                return "admin";
+            }
+        }
+        return "index";
     }
 
    /* //传统jsp验证方法
@@ -102,10 +113,13 @@ public class HomeController {
 
     //登录跳转 貌似很多网站直接都是js处理页面跳转逻辑,cookie(待求证) 安全问题如何解决?
     @RequestMapping(value = "adminLogin",method = POST)
-    public String adminLogin(@RequestParam("name") String name, @RequestParam("password") String password){
+    public String adminLogin(@RequestParam("name") String name, @RequestParam("password") String password, HttpServletResponse res){
         String right_password = userRepository.findPassByName(name);
         if (right_password!=null && right_password.equals(password)) {
             //设置cookie session
+            Cookie cookie=new Cookie("isLogin","true");
+            cookie.setMaxAge(6000);
+            res.addCookie(cookie);
             return "redirect:admin";
         }
         return "index";

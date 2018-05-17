@@ -23,9 +23,9 @@ import java.util.List;
 public class JdbcSongRepositoryImp implements SongRepository {
     private final String INSERT_SONG="INSERT INTO song VALUES (NULL,?,?,?,?,?,?,?);";
     private final String DELETE_SONG="DELETE FROM song WHERE id=?;";
-    private final String UPDATE_SONG="UPDATE song SET name=?,author=?,singer=?,issue_date=?,album=?,pic_url=?,song_url=? WHERE id=?";
+    private final String UPDATE_SONG="UPDATE song SET song_name=?,author=?,singer=?,issue_date=?,album=?,pic_url=?,song_url=? WHERE id=?";
     private final String SHOW_SONG="SELECT * FROM song limit 0,30;";
-    private final String SEARCH_SONG_AS_NAME ="SELECT * FROM song WHERE name=?;";
+    private final String SEARCH_SONG_AS_NAME ="SELECT * FROM song WHERE song_name=?;";
     private final String SEARCH_SONG_AS_SINGER="SELECT * FROM song WHERE singer=?";
     private final JdbcOperations jdbc;
 
@@ -38,7 +38,7 @@ public class JdbcSongRepositoryImp implements SongRepository {
     @Override
     public void addSong(Song song) {
         jdbc.update(INSERT_SONG,
-                song.getName(),
+                song.getSong_name(),
                 song.getAuthor(),
                 song.getSinger(),
                 song.getIssue_date(),
@@ -54,7 +54,7 @@ public class JdbcSongRepositoryImp implements SongRepository {
     @Override
     public void updSong(Song song) {
         jdbc.update(UPDATE_SONG,
-                song.getName(),
+                song.getSong_name(),
                 song.getAuthor(),
                 song.getSinger(),
                 song.getIssue_date(),
@@ -100,7 +100,7 @@ public class JdbcSongRepositoryImp implements SongRepository {
         public Song mapRow(ResultSet rs, int rowNum) throws SQLException {
             return new Song(
                     rs.getInt("id"),
-                    rs.getString("name"),
+                    rs.getString("song_name"),
                     rs.getString("author"),
                     rs.getString("singer"),
                     rs.getString("issue_date"),
@@ -114,7 +114,7 @@ public class JdbcSongRepositoryImp implements SongRepository {
         public Song mapRow(ResultSet rs, int rowNum) throws SQLException {
             return new Song(
                     rs.getInt("id"),
-                    rs.getString("name"),
+                    rs.getString("song_name"),
                     rs.getString("author"),
                     rs.getString("singer"),
                     rs.getString("issue_date"),

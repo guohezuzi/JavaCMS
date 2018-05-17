@@ -1,6 +1,6 @@
 #logo {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-top: 10%;
     padding-bottom: 10%;
     border-bottom-style: dashed;
@@ -18,27 +18,54 @@
     width: 100%;
 }
 
-#left-bar {
-    position: fixed;
-    left: 0;
-    width: 20%;
-    height: 100%;
-    margin: 0;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #434343, #000000);
+@media (max-width: 800px) {
+    #left-bar {
+        position: fixed;
+        left: 0;
+        width: 30%;
+        height: 100%;
+        margin: 0;
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #434343, #000000);
+    }
+
+    #container-content {
+        position: relative;
+        /* background-color: #5a6268;*/
+        left: 30%;
+        width: 70%;
+        padding-bottom: 10vh;
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
 }
 
-#container-content {
-    position: relative;
-   /* background-color: #5a6268;*/
-    left: 20%;
-    width: 80%;
-    padding-bottom: 10vh;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+@media (min-width: 800px) {
+    #left-bar {
+        position: fixed;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        margin: 0;
+        background: #000000; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #434343, #000000);
+    }
 
+    #container-content {
+        position: relative;
+        /* background-color: #5a6268;*/
+        left: 20%;
+        width: 80%;
+        padding-bottom: 10vh;
+        background: #000000; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
 }
 
 #container-content nav {
@@ -46,6 +73,10 @@
 
 #bottom{
     margin-top: 10%;
+}
+
+#loading{
+
 }
 
 .bottom{

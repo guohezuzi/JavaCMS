@@ -2,7 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="data.mapper.SongMapper">
     <resultMap id="songResultMap" type="entity.Song">
-        <result property="name" column="name"/>
+        <result property="id" column="id"/>
+        <result property="song_name" column="song_name"/>
         <result property="author" column="author"/>
         <result property="singer" column="singer"/>
         <result property="issue_date" column="issue_date"/>
@@ -11,13 +12,13 @@
         <result property="song_url" column="song_url"/>
     </resultMap>
     <insert id="insertSong" parameterType="entity.Song">
-        INSERT INTO song (name, author, singer, issue_date, album) VALUES
-            (#{name}, #{author}, #{singer}, #{issue_date}, #{album})
+        INSERT INTO song (song_name, author, singer, issue_date, album, pic_url, song_url) VALUES
+            (#{song_name}, #{author}, #{singer}, #{issue_date}, #{album}, #{pic_url}, #{song_url})
     </insert>
     <update id="updateSong" parameterType="entity.Song">
         UPDATE song
         <set>
-            <if test="name != '' ">name=#{name},</if>
+            <if test="song_name != '' ">song_name=#{song_name},</if>
             <if test="author != '' ">author=#{author},</if>
             <if test="singer != '' ">singer=#{singer},</if>
             <if test="issue_date != ''">issue_date=#{issue_date},</if>

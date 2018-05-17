@@ -101,9 +101,9 @@
                       enctype="multipart/form-data">
                     <div class="form-group">
                         <label>歌名:</label>
-                        <input class="form-control bg-secondary" name="song-name" type="text"
-                               size="5" title="song_name" data-rule="minLength:1|maxLength:12">
-                        <div class="text-danger" id="song-name-input-error"></div>
+                        <input class="form-control bg-secondary" name="song_name" type="text"
+                               size="5" title="name" data-rule="minLength:1|maxLength:12">
+                        <div class="text-danger" id="song_name-input-error"></div>
 
                         <label>歌手:</label>
                         <input class="form-control bg-secondary" name="singer" type="text" size="5"
@@ -121,12 +121,12 @@
                         <div class="text-danger" id="album-input-error"></div>
 
                         <label>发行日期:</label>
-                        <input class="form-control bg-secondary" name="issue-date" type="date" title="song_date">
+                        <input class="form-control bg-secondary" name="issue_date" type="date" title="song_date">
 
                         <label>上传封面:</label>
-                        <input class="form-control bg-secondary" name="song-pic" type="file" accept="image/jpeg"
+                        <input class="form-control bg-secondary" name="song_pic" type="file" accept="image/jpeg"
                                size="2">
-                        上传歌曲:<input class="form-control bg-secondary" name="song-file" type="file" accept="audio/mpeg"
+                        上传歌曲:<input class="form-control bg-secondary" name="song_file" type="file" accept="audio/mpeg"
                                     size="2">
                         <input type="submit" class="form-control btn-secondary" value="增加">
                     </div>
@@ -156,10 +156,10 @@
                                        placeholder="id">
                             </th>
                             <td>
-                                <p class="default-data">${song.name}</p>
+                                <p class="default-data">${song.song_name}</p>
                                 <div class="change-input">
                                     <input name="name" class="form-control" type="text" size="2"
-                                           placeholder="${song.name}">
+                                           placeholder="${song.song_name}">
                                     <input class="cancel-change btn-sm btn-secondary" type="button" value="&times;">
                                 </div>
                             </td>

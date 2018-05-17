@@ -5,7 +5,7 @@ import entity.Song;
 import java.util.ArrayList;
 import java.util.List;
 
-//song表访问数据库接口
+//song表 数据库访问接口
 public interface SongRepository {
     void addSong(Song song);
     void delSong(Song song);

@@ -1,7 +1,5 @@
 package entity;
 
-import javax.validation.constraints.NotEmpty;
-
 /**
  * \* Created with IntelliJ IDEA.
  * \* User: guohezuzi
@@ -14,7 +12,7 @@ public class Song {
     private int id;
 
     //@NotEmpty(message = "歌曲名不能为空")
-    private String name;
+    private String song_name;
 
     //@NotEmpty(message = "作曲不能为空")
     private String author;
@@ -34,18 +32,18 @@ public class Song {
     //@NotEmpty
     private String song_url;
 
-    public Song(int id,String name, String author, String singer, String issue_date, String album) {
+    public Song(int id, String song_name, String author, String singer, String issue_date, String album) {
         this.id=id;
-        this.name = name;
+        this.song_name = song_name;
         this.author = author;
         this.singer = singer;
         this.issue_date = issue_date;
         this.album = album;
     }
 
-    public Song(int id,String name, String author, String singer, String issue_date, String album ,String pic_url,String song_url) {
+    public Song(int id, String song_name, String author, String singer, String issue_date, String album , String pic_url, String song_url) {
         this.id=id;
-        this.name = name;
+        this.song_name = song_name;
         this.author = author;
         this.singer = singer;
         this.issue_date = issue_date;
@@ -57,12 +55,12 @@ public class Song {
     public Song() {
     }
 
-    public String getName() {
-        return name;
+    public String getSong_name() {
+        return song_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSong_name(String song_name) {
+        this.song_name = song_name;
     }
 
     public String getAuthor() {

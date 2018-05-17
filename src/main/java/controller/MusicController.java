@@ -9,13 +9,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
@@ -50,11 +47,13 @@ public class MusicController {
     public String addSongToView(@RequestPart("song_file") MultipartFile music_file,
                                 @RequestPart("song_pic") MultipartFile pic_file,
                                 Song song, Model model) throws IOException {
-        music_file.transferTo(new File("/home/guohezuzi/Code/date/MusicSystem/music/" + song.getName() + ".mp3"));
-        pic_file.transferTo(new File("/home/guohezuzi/Code/date/MusicSystem/img/" + song.getName() + ".jpg"));
+        music_file.transferTo(new File("/home/guohezuzi/Code/IdeaProjects/JavaCMS/src/main/webapp/resources/song/" + song.getSong_name() + ".mp3"));
+        pic_file.transferTo(new File("/home/guohezuzi/Code/IdeaProjects/JavaCMS/src/main/webapp/resources/img/" + song.getSong_name() + ".jpg"));
+        song.setPic_url("/resources/img/"+song.getSong_name()+".jpg");
+        song.setSong_url("/resources/song/"+song.getSong_name()+".mp3");
         songMapper.insertSong(song);
         model.addAttribute("isAdd", true);
-        return "forward:admin";
+        return "forward:/admin";
     }
 
     //更新歌曲的处理
@@ -68,12 +67,15 @@ public class MusicController {
         }
         else if(delete != null){
             songRepository.delSong(song);
+            /*// TODO: 18-5-17
+            * 文件的删除
+            * */
             model.addAttribute("isDelete",true);
         }
         else {
             model.addAttribute("isError",true);
         }
-        return "forward:admin";
+        return "forward:/admin";
     }
 
     //搜索歌曲的处理
@@ -91,15 +93,5 @@ public class MusicController {
             default:
                 return null;
         }
-    }
-
-    /**
-    * 异步请求加载更多数据
-    * @param page 第多少页数据 30一页(起始为第0页)
-    */
-    @RequestMapping(value = "loading",method = GET)
-    @ResponseBody
-    public ArrayList<List<Song>> load(@RequestParam int page){
-        return songRepository.showThirtySong(30*page);
     }
 }
