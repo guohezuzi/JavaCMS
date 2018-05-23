@@ -56,7 +56,7 @@ public class MusicController {
         return "forward:/admin";
     }
 
-    //更新歌曲的处理
+    /**更新歌曲的处理*/
     @RequestMapping(value = "m_upd_song", method = GET)
     public String m_upd_song(Song song, Model model,
                              @RequestParam(value = "update", required = false) String update,

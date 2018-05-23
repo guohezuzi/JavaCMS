@@ -37,7 +37,7 @@ $(function () {
 
     //音乐卡片效果
 
-    $(document).on('click','.play',function () {
+    $(document).on('click', '.play', function () {
         const bkg_url = $(this).css('background-image').split("/").pop();
         const icon = bkg_url.split(".")[0];
         if (icon === "play-icon") {
@@ -152,5 +152,80 @@ $(function () {
             })
         }
     );
+
+    //显示 隐藏效果
+    let state=true;//侧栏的状态
+    const $show = $('#show-select');
+    $show.click(function () {
+            if (state) {
+                $('#left-bar').hide();
+                $('#top-bar').css(
+                    {
+                        'width': '100%',
+                        'left': '0'
+                    }
+                );
+                $('#container-content').css(
+                    {
+                        'width': '100%',
+                        'left': '0'
+                    }
+                );
+                state=false;
+
+            }
+            else {
+                $('#left-bar').show();
+                $('#top-bar').css(
+                    {
+                        'width': '80%',
+                        'left': '20%'
+                    }
+                );
+                $('#container-content').css(
+                    {
+                        'width': '80%',
+                        'left': '20%'
+                    }
+                );
+                state=true;
+            }
+        }
+    );
+
+    //更换主题功能(设置不同的css属性或许可以减轻代码量)
+    function changeTheme(color_top, color_bottom) {
+        let gradient = 'linear-gradient(to bottom,' + color_top + ',' + color_bottom+')';
+        $('#left-bar').css(
+            {
+                'background': gradient
+            }
+        );
+
+        $('#container-content').css(
+            {
+                'background': gradient
+            }
+        );
+
+        $('#top-bar').css(
+            {
+                'background': color_top
+            }
+        )
+    }
+
+    $('#dark-theme').click(function () {
+        changeTheme('#434343', '#000000')
+    });
+    $('#pizelex-theme').click(function () {
+        changeTheme('#114357','#f29492')
+    });
+    $('#piglet-theme').click(function () {
+        changeTheme('#ee9ca7','#ffdde1')
+    });
+    $('#lizard-theme').click(function () {
+        changeTheme('#304352','#304352')
+    })
 
 });

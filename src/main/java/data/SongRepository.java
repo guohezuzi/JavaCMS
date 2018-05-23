@@ -16,7 +16,7 @@ public interface SongRepository {
 
     List<Song> searchAsSinger(String singer);
 
-    /*
+    /**
     * 查找30条数据
     * @return List形式的30条数据,一个List中分5个List,每个List 6条数据
     * @Parameter start查询的元素开始的位置

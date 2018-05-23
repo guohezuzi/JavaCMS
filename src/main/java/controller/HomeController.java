@@ -122,6 +122,6 @@ public class HomeController {
             res.addCookie(cookie);
             return "redirect:admin";
         }
-        return "index";
+        return "forward:/index";
     }
 }

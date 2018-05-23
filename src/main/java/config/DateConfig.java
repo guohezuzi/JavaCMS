@@ -1,16 +1,11 @@
 package config;
 
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientOptions;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.mongodb.core.MongoClientFactoryBean;
-import org.springframework.data.mongodb.core.MongoOperations;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -39,8 +34,9 @@ public class DateConfig{
         dataSource.setPassword("123456");
         return dataSource;
     }
+
     //事务管理
-    @Bean(name = "transactionMamonnager")
+    @Bean(name = "transactionManager")
     public DataSourceTransactionManager dataSourceTransactionManager(DataSource dataSource) {
         DataSourceTransactionManager dataSourceTransactionManager = new DataSourceTransactionManager();
         dataSourceTransactionManager.setDataSource(dataSource);
@@ -100,6 +96,7 @@ public class DateConfig{
         redisTemplate.afterPropertiesSet();
         return redisTemplate;
     }*/
+
     //spring自带JDBC操作
     @Bean
     public JdbcOperations jdbcTemplate(DataSource dataSource) {

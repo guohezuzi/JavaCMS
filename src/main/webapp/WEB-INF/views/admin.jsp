@@ -158,7 +158,7 @@
                             <td>
                                 <p class="default-data">${song.song_name}</p>
                                 <div class="change-input">
-                                    <input name="name" class="form-control" type="text" size="2"
+                                    <input name="song_name" class="form-control" type="text" size="2"
                                            placeholder="${song.song_name}">
                                     <input class="cancel-change btn-sm btn-secondary" type="button" value="&times;">
                                 </div>

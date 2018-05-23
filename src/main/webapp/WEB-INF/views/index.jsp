@@ -68,8 +68,24 @@
         </div>
     </div>
     <%--
-        <div class="bottom">balabalabala...</div>
+        <div class="bottom">balabalabala...
     --%>
+</div>
+<div id="top-bar" class="justify-content-between">
+    <a id="show-select" href="#"></a>
+    <div id="change-theme">
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" data-toggle="dropdown">
+                更换主题
+            </a>
+            <div class="dropdown-menu">
+                <a id="dark-theme" class="dropdown-item" href="#">Default(dark)</a>
+                <a id="lizard-theme" class="dropdown-item" href="#">Lizard</a>
+                <a id="pizelex-theme" class="dropdown-item" href="#">Pizelex</a>
+                <a id="piglet-theme" class="dropdown-item" href="#">PigLet</a>
+            </div>
+        </div>
+    </div>
 </div>
 <div id="container-content">
     <div class="container">
@@ -152,7 +168,7 @@
             </div>
         </c:forEach>
 
-        <div id="loading-wrap" class="row justify-content-center">
+        <div class="row justify-content-center">
             <div class="col-auto">
                 <a id="loading" class="text-dark">加载更多</a>
             </div>

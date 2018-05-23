@@ -21,6 +21,7 @@
             <if test="song_name != '' ">song_name=#{song_name},</if>
             <if test="author != '' ">author=#{author},</if>
             <if test="singer != '' ">singer=#{singer},</if>
+            <if test="album != ''">album=#{album}</if>
             <if test="issue_date != ''">issue_date=#{issue_date},</if>
             <if test="pic_url != null">pic_url=#{pic_url},</if>
             <if test="song_url != null">song_url=#{song_url}</if>

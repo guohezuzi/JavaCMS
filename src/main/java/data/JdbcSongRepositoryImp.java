@@ -97,6 +97,7 @@ public class JdbcSongRepositoryImp implements SongRepository {
 
     //管理员界面的映射
     private static class SongRowMapper implements RowMapper<Song> {
+        @Override
         public Song mapRow(ResultSet rs, int rowNum) throws SQLException {
             return new Song(
                     rs.getInt("id"),
@@ -111,6 +112,7 @@ public class JdbcSongRepositoryImp implements SongRepository {
 
     //web用的映射(用户界面的映射)
     private static class SongRowMapperForWeb implements RowMapper<Song> {
+        @Override
         public Song mapRow(ResultSet rs, int rowNum) throws SQLException {
             return new Song(
                     rs.getInt("id"),
