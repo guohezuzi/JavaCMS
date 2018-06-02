@@ -29,7 +29,7 @@ public class DateConfig{
     public DataSource dateSource(){
         DriverManagerDataSource dataSource=new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/JavaCMS?serverTimezone=Hongkong&useSSL=false");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/JavaCMS?characterEncoding=UTF-8&serverTimezone=Hongkong&useSSL=false");
         dataSource.setUsername("javacms");
         dataSource.setPassword("123456");
         return dataSource;

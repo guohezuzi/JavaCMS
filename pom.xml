@@ -146,7 +146,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>MusicSystem</finalName>
+        <finalName>JavaCMSSystem</finalName>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
