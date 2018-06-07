@@ -2,7 +2,7 @@ package entity;
 
 /**
  * \* Created with IntelliJ IDEA.
- * \* User: guohezuzi
+ * \* @author: guohezuzi
  * \* Date: 2018-04-23
  * \* Time: 下午5:35
  * \* Description:管理员类

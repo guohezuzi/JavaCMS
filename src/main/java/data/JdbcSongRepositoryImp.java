@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * \* Created with IntelliJ IDEA.
- * \* User: guohezuzi
+ * \* @author: guohezuzi
  * \* Date: 18-2-2
  * \* Time: 下午8:49
  * \* Description:对song表访问的实现类
@@ -29,8 +29,9 @@ public class JdbcSongRepositoryImp implements SongRepository {
     private final String SEARCH_SONG_AS_SINGER="SELECT * FROM song WHERE singer=?";
     private final JdbcOperations jdbc;
 
+
+    /**在此idea检查出错 songMapper已经注入*/
     @Autowired
-    //在此idea检查出错 songMapper已经注入
     private JdbcSongRepositoryImp(JdbcOperations jdbc) {
         this.jdbc = jdbc;
     }
@@ -80,7 +81,7 @@ public class JdbcSongRepositoryImp implements SongRepository {
         return jdbc.query(SEARCH_SONG_AS_SINGER,new SongRowMapper(), singer);
     }
 
-    //查询30条数据
+    /*查询30条数据*/
     @Override
     public ArrayList<List<Song> > showThirtySong(int start) {
         ArrayList<List<Song> > result=new ArrayList<>();
@@ -95,7 +96,7 @@ public class JdbcSongRepositoryImp implements SongRepository {
         return result;
     }
 
-    //管理员界面的映射
+    /**管理员界面的映射*/
     private static class SongRowMapper implements RowMapper<Song> {
         @Override
         public Song mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -110,7 +111,7 @@ public class JdbcSongRepositoryImp implements SongRepository {
         }
     }
 
-    //web用的映射(用户界面的映射)
+    /**web用的映射(用户界面的映射)*/
     private static class SongRowMapperForWeb implements RowMapper<Song> {
         @Override
         public Song mapRow(ResultSet rs, int rowNum) throws SQLException {

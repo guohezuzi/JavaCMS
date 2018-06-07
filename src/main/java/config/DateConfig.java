@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 
 /**
  * \* Created with IntelliJ IDEA.
- * \* User: guohezuzi
+ * \* @author: guohezuzi
  * \* Date: 18-2-2
  * \* Time: 下午9:26
  * \* Description:数据库访问配置
@@ -24,7 +24,7 @@ import javax.sql.DataSource;
 @Configuration
 @MapperScan({"data/mapper"})
 public class DateConfig{
-    //数据源
+    /**数据源*/
     @Bean
     public DataSource dateSource(){
         DriverManagerDataSource dataSource=new DriverManagerDataSource();
@@ -35,7 +35,7 @@ public class DateConfig{
         return dataSource;
     }
 
-    //事务管理
+    /**事务管理*/
     @Bean(name = "transactionManager")
     public DataSourceTransactionManager dataSourceTransactionManager(DataSource dataSource) {
         DataSourceTransactionManager dataSourceTransactionManager = new DataSourceTransactionManager();
@@ -43,7 +43,7 @@ public class DateConfig{
         return dataSourceTransactionManager;
     }
 
-    //mybatis sqlSessionFactory配置
+    /**mybatis sqlSessionFactory配置*/
     @Bean
     public SqlSessionFactoryBean sessionFactoryBean(DataSource dataSource){
         SqlSessionFactoryBean sqlSessionFactoryBean= new SqlSessionFactoryBean();
@@ -52,7 +52,7 @@ public class DateConfig{
         return sqlSessionFactoryBean;
     }
 
-    //mybatis sqlSession配置 可以替代sqlSessionFactory简化代码
+    /**mybatis sqlSession配置 可以替代sqlSessionFactory简化代码*/
     @Bean
     public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory){
        return new SqlSessionTemplate(sqlSessionFactory);
@@ -97,7 +97,7 @@ public class DateConfig{
         return redisTemplate;
     }*/
 
-    //spring自带JDBC操作
+    /**spring自带JDBC操作*/
     @Bean
     public JdbcOperations jdbcTemplate(DataSource dataSource) {
         return new JdbcTemplate(dataSource);

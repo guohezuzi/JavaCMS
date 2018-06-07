@@ -19,7 +19,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 /**
  * \* Created with IntelliJ IDEA.
- * \* User: guohezuzi
+ * \* @author: guohezuzi
  * \* Date: 18-2-2
  * \* Time: 下午7:00
  * \* Description:对歌曲操作的前端控制器
@@ -42,7 +42,7 @@ public class MusicController {
         return "forward:/index";
     }
 
-    //添加歌曲的处理
+    /**添加歌曲的处理*/
     @RequestMapping(value = "m_add_song", method = POST)
     public String addSongToView(@RequestPart("song_file") MultipartFile music_file,
                                 @RequestPart("song_pic") MultipartFile pic_file,
@@ -78,7 +78,7 @@ public class MusicController {
         return "forward:/admin";
     }
 
-    //搜索歌曲的处理
+    /**搜索歌曲的处理*/
     @RequestMapping(value = "m_search_song", method = GET)
     public String m_search_song(@RequestParam("search") String search,
                                 @RequestParam("select") String select,

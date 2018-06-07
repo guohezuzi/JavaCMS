@@ -15,7 +15,7 @@ import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 
 /**
  * \* Created with IntelliJ IDEA.
- * \* User: guohezuzi
+ * \* @author: guohezuzi
  * \* Date: 18-2-2
  * \* Time: 下午5:30
  * \* Description:

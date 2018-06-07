@@ -9,7 +9,7 @@ import javax.servlet.ServletRegistration;
 
 /**
  * \* Created with IntelliJ IDEA.
- * \* User: guohezuzi
+ * \* @author: guohezuzi
  * \* Date: 18-2-2
  * \* Time: 下午5:17
  * \* Description:springmvc web初始化设置

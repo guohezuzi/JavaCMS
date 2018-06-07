@@ -19,7 +19,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 /**
  * \* Created with IntelliJ IDEA.
- * \* User: guohezuzi
+ * \* @author: guohezuzi
  * \* Date: 18-2-2
  * \* Time: 下午11:54
  * \* Description:主页视图控制器
@@ -44,7 +44,7 @@ public class HomeController {
         return "index";
     }
 
-    //管理员界面跳转
+    /**管理员界面跳转*/
     @RequestMapping(value = "admin", method = {GET,POST})
     public String admin(Model model, HttpServletRequest res) {
         Cookie[] cookies=res.getCookies();
@@ -83,7 +83,7 @@ public class HomeController {
         }
     }*/
 
-    //ajax验证方法 异步请求 减少不必要的请求  安全问题!!!
+    /**ajax验证方法 异步请求 减少不必要的请求  安全问题!!!*/
     @RequestMapping(value = "loginVerify", method = POST)
     @ResponseBody
     public ModelMap adminVerify(@RequestParam("name") String name, @RequestParam("password") String password) {
@@ -111,11 +111,11 @@ public class HomeController {
         }
     }
 
-    //登录跳转 貌似很多网站直接都是js处理页面跳转逻辑,cookie(待求证) 安全问题如何解决?
+    /**登录跳转 貌似很多网站直接都是js处理页面跳转逻辑,cookie(待求证) 安全问题如何解决?*/
     @RequestMapping(value = "adminLogin",method = POST)
     public String adminLogin(@RequestParam("name") String name, @RequestParam("password") String password, HttpServletResponse res){
-        String right_password = userRepository.findPassByName(name);
-        if (right_password!=null && right_password.equals(password)) {
+        String rightPassword = userRepository.findPassByName(name);
+        if (rightPassword!=null && rightPassword.equals(password)) {
             //设置cookie session
             Cookie cookie=new Cookie("isLogin","true");
             cookie.setMaxAge(6000);

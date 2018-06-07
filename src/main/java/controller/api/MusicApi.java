@@ -16,7 +16,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 /**
  * \* Created with IntelliJ IDEA.
- * \* User: guohezuzi
+ * \* @author: guohezuzi
  * \* Date: 2018-05-13
  * \* Time: 下午4:24
  * \* Description:音乐的json数据
@@ -24,12 +24,12 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
  */
 @Controller
 @RequestMapping("/api/music")
-public class MusicAPI {
+public class MusicApi {
     private final SongRepository songRepository;
     private final SongMapper songMapper;
 
     @Autowired
-    public MusicAPI(SongRepository songRepository, SongMapper songMapper) {
+    public MusicApi(SongRepository songRepository, SongMapper songMapper) {
         this.songMapper = songMapper;
         this.songRepository = songRepository;
     }

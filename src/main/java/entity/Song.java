@@ -2,7 +2,7 @@ package entity;
 
 /**
  * \* Created with IntelliJ IDEA.
- * \* User: guohezuzi
+ * \* @author: guohezuzi
  * \* String: 18-2-2
  * \* Time: 下午4:55
  * \* Description:歌曲类(包含基本歌曲信息)
