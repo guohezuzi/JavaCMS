@@ -45,10 +45,10 @@ public class MusicController {
     /**添加歌曲的处理*/
     @RequestMapping(value = "m_add_song", method = POST)
     public String addSongToView(@RequestPart("song_file") MultipartFile music_file,
-                                @RequestPart("song_pic") MultipartFile pic_file,
+                                @RequestPart("song_pic") MultipartFile picFile,
                                 Song song, Model model) throws IOException {
         music_file.transferTo(new File("/home/guohezuzi/Code/IdeaProjects/JavaCMS/src/main/webapp/resources/song/" + song.getSong_name() + ".mp3"));
-        pic_file.transferTo(new File("/home/guohezuzi/Code/IdeaProjects/JavaCMS/src/main/webapp/resources/img/" + song.getSong_name() + ".jpg"));
+        picFile.transferTo(new File("/home/guohezuzi/Code/IdeaProjects/JavaCMS/src/main/webapp/resources/img/" + song.getSong_name() + ".jpg"));
         song.setPic_url("/resources/img/"+song.getSong_name()+".jpg");
         song.setSong_url("/resources/song/"+song.getSong_name()+".mp3");
         songMapper.insertSong(song);
@@ -58,9 +58,9 @@ public class MusicController {
 
     /**更新歌曲的处理*/
     @RequestMapping(value = "m_upd_song", method = GET)
-    public String m_upd_song(Song song, Model model,
-                             @RequestParam(value = "update", required = false) String update,
-                             @RequestParam(value = "delete", required = false) String delete) {
+    public String mUpdSong(Song song, Model model,
+                           @RequestParam(value = "update", required = false) String update,
+                           @RequestParam(value = "delete", required = false) String delete) {
         if (update !=null) {
             songMapper.updateSong(song);
             model.addAttribute("isUpdate", true);
@@ -80,9 +80,9 @@ public class MusicController {
 
     /**搜索歌曲的处理*/
     @RequestMapping(value = "m_search_song", method = GET)
-    public String m_search_song(@RequestParam("search") String search,
-                                @RequestParam("select") String select,
-                                Model model) {
+    public String mSearchSong(@RequestParam("search") String search,
+                              @RequestParam("select") String select,
+                              Model model) {
         switch (select) {
             case "name":
                 model.addAttribute(songRepository.searchAsName(search));

@@ -14,7 +14,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
  * \
  */
 @Controller
-public class AOPController {
+public class AopController {
     /**对所有功能完成后返回首页的方法的控制器*/
     @RequestMapping(value = "/back",method = GET)
     public String backHome(){

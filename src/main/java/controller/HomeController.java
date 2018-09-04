@@ -39,7 +39,6 @@ public class HomeController {
 
     @RequestMapping(value = {"/","index"},method = {GET,POST})
     public String home(Model model) {
-        //model.addAttribute("count",userRepository.getCount());
         model.addAttribute("songList", songRepository.showThirtySong(0));
         return "index";
     }
@@ -50,7 +49,7 @@ public class HomeController {
         Cookie[] cookies=res.getCookies();
         for (Cookie c :
                 cookies) {
-            if (c.getName().equals("isLogin")){
+            if (("isLogin").equals(c.getName())){
                 model.addAttribute("songList", songRepository.showAllSong());
                 return "admin";
             }

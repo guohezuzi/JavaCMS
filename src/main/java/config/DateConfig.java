@@ -48,7 +48,6 @@ public class DateConfig{
     public SqlSessionFactoryBean sessionFactoryBean(DataSource dataSource){
         SqlSessionFactoryBean sqlSessionFactoryBean= new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource);
-        //sqlSessionFactoryBean.setMapperLocations(new Resource[]{new ClassPathResource("data.mapper/SongMapper.xml")});
         return sqlSessionFactoryBean;
     }
 

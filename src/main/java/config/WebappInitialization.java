@@ -12,7 +12,7 @@ import javax.servlet.ServletRegistration;
  * \* @author: guohezuzi
  * \* Date: 18-2-2
  * \* Time: 下午5:17
- * \* Description:springmvc web初始化设置
+ * \* Description:spring mvc web初始化设置
  * \
  */
 public class WebappInitialization extends AbstractAnnotationConfigDispatcherServletInitializer {

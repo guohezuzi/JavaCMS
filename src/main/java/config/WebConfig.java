@@ -25,7 +25,7 @@ import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 @ComponentScan({"controller", "config", "data"})
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-    //配置视图解析
+    /**配置视图解析*/
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         //tile视图解析
@@ -44,13 +44,13 @@ public class WebConfig implements WebMvcConfigurer {
 
     }
 
-    //配置静态资源处理
+    /**配置静态资源处理*/
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
     }
 
-    //配置messageSource根据给定编码获取信息
+    /**配置messageSource根据给定编码获取信息*/
     @Bean
     public MessageSource messageSource() {
         /*//方法一:
@@ -60,12 +60,13 @@ public class WebConfig implements WebMvcConfigurer {
         //方法二:
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
         messageSource.setDefaultEncoding("utf-8");
-        messageSource.setBasename("file:/home/guohezuzi/temp/messages");//在类路径下的属性文件,在文件系统中配置为:(file:/...)无法使用[存疑!!!(已解决,可正常使用,message匹配错误)]
+        //在类路径下的属性文件,在文件系统中配置为:(file:/...)无法使用[存疑!!!(已解决,可正常使用,message匹配错误)]
+        messageSource.setBasename("file:/home/guohezuzi/temp/messages");
         messageSource.setCacheSeconds(10);
         return messageSource;
     }
 
-    //配置apache tiles视图解析
+    /**配置apache tiles视图解析*/
     @Bean
     public TilesConfigurer tilesConfigurer() {
         TilesConfigurer tilesConfigurer = new TilesConfigurer();
@@ -75,7 +76,7 @@ public class WebConfig implements WebMvcConfigurer {
         return tilesConfigurer;
     }
 
-    //配置multipart解析器(处理文件上传)
+    /**配置multipart解析器(处理文件上传)*/
     @Bean
     MultipartResolver multipartResolver() {
         return new StandardServletMultipartResolver();
