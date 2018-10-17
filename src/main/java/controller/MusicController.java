@@ -44,10 +44,10 @@ public class MusicController {
 
     /**添加歌曲的处理*/
     @RequestMapping(value = "m_add_song", method = POST)
-    public String addSongToView(@RequestPart("song_file") MultipartFile music_file,
+    public String addSongToView(@RequestPart("song_file") MultipartFile musicFile,
                                 @RequestPart("song_pic") MultipartFile picFile,
                                 Song song, Model model) throws IOException {
-        music_file.transferTo(new File("/home/guohezuzi/Code/IdeaProjects/JavaCMS/src/main/webapp/resources/song/" + song.getSong_name() + ".mp3"));
+        musicFile.transferTo(new File("/home/guohezuzi/Code/IdeaProjects/JavaCMS/src/main/webapp/resources/song/" + song.getSong_name() + ".mp3"));
         picFile.transferTo(new File("/home/guohezuzi/Code/IdeaProjects/JavaCMS/src/main/webapp/resources/img/" + song.getSong_name() + ".jpg"));
         song.setPic_url("/resources/img/"+song.getSong_name()+".jpg");
         song.setSong_url("/resources/song/"+song.getSong_name()+".mp3");
